@@ -1,0 +1,228 @@
+schedules:
+  - name: "Akademia Artystyczna"
+    url: "https://akademiaartystyczna.com/grafik/"
+    parser: "aka"
+    schedule_type: "static"
+    studio_id: "aka"
+    latitude: 54.397887814854315
+    longitude: 18.577503317808933
+    medicover:
+      pole_dance: false
+      dance: true
+      stretch: true
+    multisport:
+      pole_dance: false
+      dance: true
+      stretch: true
+    ok_system:
+      pole_dance: true
+      dance: true
+      stretch: true
+ 
+  - name: "Czulosfera"
+    url: "https://app.fitssey.com/czulosfera/frontoffice"
+    parser: "fitssey"
+    studio_id: "czulosfera"
+    schedule_type: "dynamic"
+    latitude: null
+    longitude: null
+    medicover:
+      pole_dance: null
+      dance: null
+      stretch: null
+    multisport:
+      pole_dance: null
+      dance: null
+      stretch: null
+    ok_system:
+      pole_dance: null
+      dance: null
+      stretch: null
+ 
+  - name: "WCR Pilates"
+    url: "https://app.fitssey.com/WCRpilates/frontoffice"
+    parser: "fitssey"
+    studio_id: "WCRpilates"
+    schedule_type: "dynamic"
+    latitude: null
+    longitude: null
+    medicover:
+      pole_dance: null
+      dance: null
+      stretch: null
+    multisport:
+      pole_dance: null
+      dance: null
+      stretch: null
+    ok_system:
+      pole_dance: null
+      dance: null
+      stretch: null
+ 
+  - name: "Dance Atelier"
+    url: "https://app.fitssey.com/DanceAtelier/frontoffice"
+    parser: "fitssey"
+    studio_id: "DanceAtelier"
+    schedule_type: "dynamic"
+    latitude: null
+    longitude: null
+    medicover:
+      pole_dance: null
+      dance: null
+      stretch: null
+    multisport:
+      pole_dance: null
+      dance: null
+      stretch: null
+    ok_system:
+      pole_dance: null
+      dance: null
+      stretch: null
+
+  - name: "Well Fitness Osowa"
+    url: "https://wellfitness.perfectgym.com/ClientPortal2/#/Classes/76/Calendar"
+    parser: "perfectgym"
+    studio_id: "wellfitness"
+    club_id: 76
+    schedule_type: "dynamic"
+    latitude: null
+    longitude: null
+    medicover:
+      pole_dance: null
+      dance: null
+      stretch: null
+    multisport:
+      pole_dance: null
+      dance: null
+      stretch: null
+    ok_system:
+      pole_dance: null
+      dance: null
+      stretch: null
+ 
+  # The page embeds the wod.guru schedule https://wod.guru/schedule/esensaipoledancestudio
+  - name: "Esensai Pole Dance Studio"
+    url: "https://esensai.pl/grafik/"
+    parser: "wod_guru"
+    studio_id: "esensaipoledancestudio"
+    schedule_type: "dynamic"
+    latitude: null
+    longitude: null
+    medicover:
+      pole_dance: null
+      dance: null
+      stretch: null
+    multisport:
+      pole_dance: null
+      dance: null
+      stretch: null
+    ok_system:
+      pole_dance: null
+      dance: null
+      stretch: null
+ 
+  - name: "Lekko Studio"
+    url: "https://lekko.fitro.pl/"
+    parser: "fitro"
+    studio_id: "lekko"
+    schedule_type: "dynamic"
+    latitude: null  
+    longitude: null
+    medicover:
+      pole_dance: null
+      dance: null
+      stretch: null 
+    multisport:
+      pole_dance: null
+      dance: null
+      stretch: null
+    ok_system:
+      pole_dance: null
+      dance: null
+      stretch: null
+  
+  - name: "Well Fitness GdyniaD"
+    url: "https://wellfitness.perfectgym.com/ClientPortal2/#/Classes/54/Calendar"
+    parser: "perfectgym"
+    studio_id: "wellfitness"
+    club_id: 54
+    schedule_type: "dynamic"
+    latitude: null
+    longitude: null
+    medicover:
+      pole_dance: null
+      dance: null
+      stretch: null
+    multisport:
+      pole_dance: null
+      dance: null
+      stretch: null
+    ok_system:
+      pole_dance: null
+      dance: null
+      stretch: null
+
+  # NOTE: the host is *.chatgpt.site (a generated sign-up app, JSON at /api/sections)
+  # -> check it is the real club page.
+  - name: "Delta Climb"
+    url: "https://delta-sekcje-zapisy.gh75ccg5z2.chatgpt.site/zapisy"
+    parser: "delta_sections"
+    schedule_type: "static"
+    latitude: null
+    longitude: null
+    medicover:
+      pole_dance: null
+      dance: null
+      stretch: null
+    multisport:
+      pole_dance: null
+      dance: null
+      stretch: null
+    ok_system:
+      pole_dance: null
+      dance: null
+      stretch: null
+
+  # The timetable comes from POST https://www.activklub.pl/timetable/<timetable_id> (rate-limited).
+  - name: "Active Fikakowo"
+    url: "https://www.activklub.pl/fikakowo-harmonogram"
+    parser: "activklub"
+    timetable_id: 7
+    schedule_type: "static"
+    latitude: null  
+    longitude: null
+    medicover:
+      pole_dance: null
+      dance: null
+      stretch: null 
+    multisport:
+      pole_dance: null
+      dance: null
+      stretch: null
+    ok_system:
+      pole_dance: null
+      dance: null
+      stretch: null
+
+  # NOTE: the name says "Wielkopolska" but the URL is "energyclub-gdynia2" - check which club it is.
+  - name: "Energy CLub Wielkopolska"
+    url: "https://energyclub-gdynia2.cms.efitness.com.pl/kalendarz-zajec"
+    parser: "efitness"
+    schedule_type: "dynamic"
+    latitude: null  
+    longitude: null
+    medicover:
+      pole_dance: null
+      dance: null
+      stretch: null 
+    multisport:
+      pole_dance: null
+      dance: null
+      stretch: null
+    ok_system:
+      pole_dance: null
+      dance: null
+      stretch: null
+
+
+
