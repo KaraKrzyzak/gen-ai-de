@@ -1,0 +1,12 @@
+﻿name,url,parser,schedule_type,studio_id,latitude,longitude,medicover.pole_dance,medicover.dance,medicover.stretch,multisport.pole_dance,multisport.dance,multisport.stretch,ok_system.pole_dance,ok_system.dance,ok_system.stretch,club_id,timetable_id
+Akademia Artystyczna,https://akademiaartystyczna.com/grafik/,aka,static,aka,54.397887814854315,18.577503317808933,False,True,True,False,True,True,True,True,True,,
+Czulosfera,https://app.fitssey.com/czulosfera/frontoffice,fitssey,dynamic,czulosfera,,,,,,,,,,,,,
+WCR Pilates,https://app.fitssey.com/WCRpilates/frontoffice,fitssey,dynamic,WCRpilates,,,,,,,,,,,,,
+Dance Atelier,https://app.fitssey.com/DanceAtelier/frontoffice,fitssey,dynamic,DanceAtelier,,,,,,,,,,,,,
+Well Fitness Osowa,https://wellfitness.perfectgym.com/ClientPortal2/#/Classes/76/Calendar,perfectgym,dynamic,wellfitness,,,,,,,,,,,,76.0,
+Esensai Pole Dance Studio,https://esensai.pl/grafik/,wod_guru,dynamic,esensaipoledancestudio,,,,,,,,,,,,,
+Lekko Studio,https://lekko.fitro.pl/,fitro,dynamic,lekko,,,,,,,,,,,,,
+Well Fitness GdyniaD,https://wellfitness.perfectgym.com/ClientPortal2/#/Classes/54/Calendar,perfectgym,dynamic,wellfitness,,,,,,,,,,,,54.0,
+Delta Climb,https://delta-sekcje-zapisy.gh75ccg5z2.chatgpt.site/zapisy,delta_sections,static,,,,,,,,,,,,,,
+Active Fikakowo,https://www.activklub.pl/fikakowo-harmonogram,activklub,static,,,,,,,,,,,,,,7.0
+Energy CLub Wielkopolska,https://energyclub-gdynia2.cms.efitness.com.pl/kalendarz-zajec,efitness,dynamic,,,,,,,,,,,,,,

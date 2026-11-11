@@ -1,0 +1,36 @@
+[project]
+name = "gen-ai-de"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Karolina Krzyzagórska", email = "krzyzakkara@gmail.com" }
+]
+requires-python = ">=3.9"
+dependencies = [
+    "pandas>=2.3.3",
+    "pydantic>=2.13.5",
+    "transformers>=4.28.0",
+    "torch>=2.0.0",
+    "sentence-transformers>=2.2.2",
+    "beautifulsoup4>=4.15.0",
+    "requests>=2.32.5",
+    "pyyaml>=6.0.3",
+    "dataclasses>=0.8",
+    "python-dateutil>=3.0.0",
+    "playwright>=1.60.0",
+]
+
+[dependency-groups] ## narzedzia lokalne dla mnie
+dev = [
+    "mypy>=1.19.1",
+    "pytest",
+    "ruff",
+]
+
+[project.scripts]
+gen-ai-de = "gen_ai_de:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
