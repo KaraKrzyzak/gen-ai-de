@@ -19,6 +19,7 @@ dependencies = [
     "dataclasses>=0.8",
     "python-dateutil>=3.0.0",
     "playwright>=1.60.0",
+    "kagglehub>=0.3.13",
 ]
 
 [dependency-groups] ## narzedzia lokalne dla mnie
