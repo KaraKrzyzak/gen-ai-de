@@ -1,0 +1,77 @@
+{
+ "sections": [
+  {
+   "id": "plan-0",
+   "name": "Sekcja wspinaczkowa — 6–8 lat",
+   "kind": "child",
+   "coach": "Aga Pokrzywińska",
+   "schedule": "Poniedziałek · 17:00–18:00",
+   "frequency": 1,
+   "capacity": 8,
+   "available": 1,
+   "sessions": [
+    {
+     "id": "plan-0",
+     "schedule": "Poniedziałek · 17:00–18:00",
+     "capacity": 8,
+     "available": 1
+    }
+   ]
+  },
+  {
+   "id": "plan-1",
+   "name": "Sekcja wspinaczkowa — 6–8 lat",
+   "kind": "child",
+   "coach": "Aga Pokrzywińska",
+   "schedule": "Czwartek · 16:30–17:30",
+   "frequency": 1,
+   "capacity": 8,
+   "available": 0,
+   "sessions": [
+    {
+     "id": "plan-1",
+     "schedule": "Czwartek · 16:30–17:30",
+     "capacity": 8,
+     "available": 0
+    }
+   ]
+  },
+  {
+   "id": "plan-2",
+   "name": "Sekcja wspinaczkowa — 8–11 lat",
+   "kind": "child",
+   "coach": "Aga Pokrzywińska",
+   "schedule": "Poniedziałek · 18:00–19:30",
+   "frequency": 1,
+   "capacity": 9,
+   "available": 0,
+   "sessions": [
+    {
+     "id": "plan-2",
+     "schedule": "Poniedziałek · 18:00–19:30",
+     "capacity": 9,
+     "available": 0
+    }
+   ]
+  },
+  {
+   "id": "plan-3",
+   "name": "Sekcja wspinaczkowa — 8–11 lat",
+   "kind": "child",
+   "coach": "Aga Pokrzywińska",
+   "schedule": "Czwartek · 17:30–19:00",
+   "frequency": 1,
+   "capacity": 8,
+   "available": 2,
+   "sessions": [
+    {
+     "id": "plan-3",
+     "schedule": "Czwartek · 17:30–19:00",
+     "capacity": 8,
+     "available": 2
+    }
+   ]
+  }
+ ],
+ "updatedAt": "2026-11-11T17:50:40.446Z"
+}

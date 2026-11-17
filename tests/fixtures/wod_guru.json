@@ -1,0 +1,630 @@
+{
+ "classes": [
+  [
+   {
+    "filters": [],
+    "prepared_filters": [],
+    "start_time": 1020,
+    "end_time": 1080,
+    "class_limit": 12,
+    "classes_coaches": [
+     {
+      "id": 469236,
+      "public_coach": {
+       "id": 65438,
+       "first_name": "Magda",
+       "last_name": "Lew",
+       "state": 1,
+       "sex": 2,
+       "user_permissions": [],
+       "lang": "pl",
+       "bounced": 0,
+       "family_account": false
+      }
+     }
+    ],
+    "classroom": {
+     "id": 17,
+     "name": "Sala 2"
+    },
+    "id": "cls_88bI5F",
+    "created_at": "2026-05-28T14:12:56+02:00",
+    "updated_at": "2026-05-28T14:12:56+02:00",
+    "plan": {
+     "id": 3638,
+     "creation_date": "2020-02-20T12:16:14+01:00",
+     "name": "2 Sr.17 P4 - Pole Dance",
+     "active": true,
+     "release_type": "open",
+     "color": "#0096ff",
+     "wods_enabled": false,
+     "open_programming": false,
+     "automated_signups": true,
+     "equal_gender_split": false,
+     "image": "plan/1076cc41-f9ac-4aaf-b2b6-1d5cd19a2ea9.png",
+     "required_signups": 0,
+     "cancellation_period": 0
+    },
+    "active": 1,
+    "day0": 0,
+    "day1": 0,
+    "day2": 1,
+    "day3": 0,
+    "day4": 0,
+    "day5": 0,
+    "day6": 0,
+    "type": "recurring",
+    "starts_on": "2026-05-28",
+    "automated_cancellation": {
+     "name": "NONE",
+     "value": 0
+    },
+    "signup_after_start": false,
+    "free": false,
+    "number_of_signed_members": 0,
+    "number_of_signed_males": 0,
+    "number_of_signed_females": 0,
+    "number_of_waitlist_members": 0,
+    "cancelled": 1,
+    "removed": 0,
+    "available_for_member": false,
+    "signed_athletes_names": ""
+   },
+   {
+    "filters": [],
+    "prepared_filters": [],
+    "start_time": 1020,
+    "end_time": 1080,
+    "class_limit": 13,
+    "classes_coaches": [
+     {
+      "id": 405210,
+      "public_coach": {
+       "id": 421634,
+       "first_name": "Natalia",
+       "last_name": "Nami",
+       "state": 1,
+       "sex": 2,
+       "user_permissions": [],
+       "lang": "pl",
+       "bounced": 0,
+       "family_account": false
+      }
+     }
+    ],
+    "classroom": {
+     "id": 16,
+     "name": "Sala 3"
+    },
+    "id": "cls_88btbm",
+    "created_at": "2025-12-17T12:42:51+01:00",
+    "updated_at": "2025-12-17T12:42:51+01:00",
+    "plan": {
+     "id": 5948,
+     "creation_date": "2020-10-20T19:45:03+02:00",
+     "name": "Sr.17.00 P1/2 - Pole Dance",
+     "active": true,
+     "release_type": "open",
+     "color": "#fa9603",
+     "wods_enabled": false,
+     "open_programming": false,
+     "automated_signups": true,
+     "equal_gender_split": false,
+     "required_signups": 0,
+     "cancellation_period": 0
+    },
+    "active": 1,
+    "day0": 0,
+    "day1": 0,
+    "day2": 1,
+    "day3": 0,
+    "day4": 0,
+    "day5": 0,
+    "day6": 0,
+    "type": "recurring",
+    "starts_on": "2026-01-08",
+    "automated_cancellation": {
+     "name": "FROM_PLAN",
+     "value": 2
+    },
+    "signup_after_start": true,
+    "free": false,
+    "number_of_signed_members": 0,
+    "number_of_signed_males": 0,
+    "number_of_signed_females": 0,
+    "number_of_waitlist_members": 0,
+    "cancelled": 1,
+    "removed": 0,
+    "available_for_member": false,
+    "signed_athletes_names": ""
+   },
+   {
+    "filters": [],
+    "prepared_filters": [],
+    "start_time": 1085,
+    "end_time": 1145,
+    "class_limit": 12,
+    "classes_coaches": [
+     {
+      "id": 192358,
+      "public_coach": {
+       "id": 421634,
+       "first_name": "Natalia",
+       "last_name": "Nami",
+       "state": 1,
+       "sex": 2,
+       "user_permissions": [],
+       "lang": "pl",
+       "bounced": 0,
+       "family_account": false
+      }
+     }
+    ],
+    "classroom": {
+     "id": 16,
+     "name": "Sala 3"
+    },
+    "id": "cls_88t8KW",
+    "created_at": "2024-04-23T19:46:52+02:00",
+    "updated_at": "2024-04-23T19:46:52+02:00",
+    "plan": {
+     "id": 3538,
+     "creation_date": "2020-01-30T10:13:51+01:00",
+     "name": "Exotic Flow",
+     "active": true,
+     "release_type": "open",
+     "color": "#ff40ff",
+     "wods_enabled": false,
+     "open_programming": false,
+     "automated_signups": true,
+     "equal_gender_split": false,
+     "image": "plan/15ce754d-930a-4597-ba73-3565c57be66f.png",
+     "required_signups": 0,
+     "cancellation_period": 0
+    },
+    "active": 1,
+    "day0": 0,
+    "day1": 0,
+    "day2": 1,
+    "day3": 0,
+    "day4": 0,
+    "day5": 0,
+    "day6": 0,
+    "type": "recurring",
+    "starts_on": "2024-04-23",
+    "automated_cancellation": {
+     "name": "NONE",
+     "value": 0
+    },
+    "signup_after_start": false,
+    "free": false,
+    "number_of_signed_members": 0,
+    "number_of_signed_males": 0,
+    "number_of_signed_females": 0,
+    "number_of_waitlist_members": 0,
+    "cancelled": 1,
+    "removed": 0,
+    "available_for_member": false,
+    "signed_athletes_names": ""
+   }
+  ],
+  [
+   {
+    "filters": [],
+    "prepared_filters": [],
+    "start_time": 1020,
+    "end_time": 1080,
+    "class_limit": 12,
+    "classes_coaches": [
+     {
+      "id": 63000,
+      "public_coach": {
+       "id": 65436,
+       "first_name": "Samka",
+       "last_name": "L..",
+       "state": 1,
+       "sex": 2,
+       "user_permissions": [],
+       "lang": "pl",
+       "bounced": 0,
+       "family_account": false
+      }
+     }
+    ],
+    "classroom": {
+     "id": 17,
+     "name": "Sala 2"
+    },
+    "id": "cls_888Mwq",
+    "created_at": "2022-08-15T10:48:34+02:00",
+    "updated_at": "2022-08-15T10:48:34+02:00",
+    "plan": {
+     "id": 7906,
+     "creation_date": "2021-06-11T07:40:26+02:00",
+     "name": "2 Czw.17.00 - P3/4 Pole Dance",
+     "active": true,
+     "release_type": "open",
+     "color": "#0096ff",
+     "wods_enabled": false,
+     "open_programming": false,
+     "automated_signups": true,
+     "equal_gender_split": false,
+     "image": "plan/a69fdb71-63b4-4aef-810a-a2cc6676ed0f.png",
+     "required_signups": 0,
+     "cancellation_period": 0
+    },
+    "active": 1,
+    "day0": 0,
+    "day1": 0,
+    "day2": 0,
+    "day3": 1,
+    "day4": 0,
+    "day5": 0,
+    "day6": 0,
+    "type": "recurring",
+    "starts_on": "2022-08-15",
+    "automated_cancellation": {
+     "name": "NONE",
+     "value": 0
+    },
+    "signup_after_start": false,
+    "free": false,
+    "number_of_signed_members": 6,
+    "number_of_signed_males": 0,
+    "number_of_signed_females": 6,
+    "number_of_waitlist_members": 0,
+    "cancelled": 0,
+    "removed": 0,
+    "available_for_member": false,
+    "signed_athletes_names": ""
+   },
+   {
+    "filters": [],
+    "prepared_filters": [],
+    "start_time": 1020,
+    "end_time": 1080,
+    "class_limit": 13,
+    "classes_coaches": [
+     {
+      "id": 512702,
+      "public_coach": {
+       "id": 421634,
+       "first_name": "Natalia",
+       "last_name": "Nami",
+       "state": 1,
+       "sex": 2,
+       "user_permissions": [],
+       "lang": "pl",
+       "bounced": 0,
+       "family_account": false
+      }
+     }
+    ],
+    "classroom": {
+     "id": 16,
+     "name": "Sala 3"
+    },
+    "id": "cls_88bxmw",
+    "created_at": "2026-09-05T14:16:09+02:00",
+    "updated_at": "2026-09-05T14:16:09+02:00",
+    "plan": {
+     "id": 22839,
+     "creation_date": "2024-02-12T20:31:05+01:00",
+     "name": "Czw. 17.00 P0/1 - Pole Dance",
+     "active": true,
+     "release_type": "open",
+     "color": "#fa9603",
+     "wods_enabled": false,
+     "open_programming": false,
+     "automated_signups": true,
+     "equal_gender_split": false,
+     "image": "plan/2c634de5-6268-4115-a835-6c4e91448303.png",
+     "required_signups": 4,
+     "cancellation_period": 720
+    },
+    "active": 1,
+    "day0": 0,
+    "day1": 0,
+    "day2": 0,
+    "day3": 1,
+    "day4": 0,
+    "day5": 0,
+    "day6": 0,
+    "type": "recurring",
+    "starts_on": "2026-10-02",
+    "automated_cancellation": {
+     "name": "FROM_PLAN",
+     "value": 2
+    },
+    "signup_after_start": true,
+    "free": false,
+    "number_of_signed_members": 8,
+    "number_of_signed_males": 0,
+    "number_of_signed_females": 8,
+    "number_of_waitlist_members": 0,
+    "cancelled": 0,
+    "removed": 0,
+    "available_for_member": false,
+    "signed_athletes_names": ""
+   },
+   {
+    "filters": [],
+    "prepared_filters": [],
+    "start_time": 1030,
+    "end_time": 1090,
+    "class_limit": 2,
+    "classes_coaches": [
+     {
+      "id": 539055,
+      "public_coach": {
+       "id": 66581,
+       "first_name": "Bez",
+       "last_name": "Instruktora",
+       "state": 1,
+       "sex": 2,
+       "user_permissions": [],
+       "lang": "pl",
+       "bounced": 0,
+       "family_account": false
+      }
+     }
+    ],
+    "classroom": {
+     "id": 2274,
+     "name": "Sala 4"
+    },
+    "id": "cls_88bvO8",
+    "created_at": "2026-11-04T09:09:15+01:00",
+    "updated_at": "2026-11-04T09:09:15+01:00",
+    "plan": {
+     "id": 3533,
+     "creation_date": "2020-01-30T09:49:37+01:00",
+     "name": "Open Pole",
+     "active": true,
+     "release_type": "open",
+     "color": "#3fff00",
+     "wods_enabled": false,
+     "open_programming": false,
+     "automated_signups": false,
+     "equal_gender_split": false,
+     "image": "plan/8fdbe033-c825-43c6-a1e6-00b926286097.png",
+     "required_signups": 0,
+     "cancellation_period": 0
+    },
+    "active": 1,
+    "day0": 1,
+    "day1": 0,
+    "day2": 0,
+    "day3": 1,
+    "day4": 0,
+    "day5": 0,
+    "day6": 0,
+    "type": "recurring",
+    "starts_on": "2026-11-04",
+    "automated_cancellation": {
+     "name": "NONE",
+     "value": 0
+    },
+    "signup_after_start": true,
+    "free": false,
+    "number_of_signed_members": 2,
+    "number_of_signed_males": 0,
+    "number_of_signed_females": 2,
+    "number_of_waitlist_members": 0,
+    "cancelled": 0,
+    "removed": 0,
+    "available_for_member": false,
+    "signed_athletes_names": "Marika Drewek, Weronika Mazurek"
+   }
+  ],
+  [
+   {
+    "filters": [],
+    "prepared_filters": [],
+    "start_time": 1020,
+    "end_time": 1080,
+    "class_limit": 6,
+    "classes_coaches": [
+     {
+      "id": 499945,
+      "public_coach": {
+       "id": 66581,
+       "first_name": "Bez",
+       "last_name": "Instruktora",
+       "state": 1,
+       "sex": 2,
+       "user_permissions": [],
+       "lang": "pl",
+       "bounced": 0,
+       "family_account": false
+      }
+     }
+    ],
+    "classroom": {
+     "id": 17,
+     "name": "Sala 2"
+    },
+    "id": "cls_88bQ9D",
+    "created_at": "2026-08-14T15:25:11+02:00",
+    "updated_at": "2026-08-14T15:25:11+02:00",
+    "plan": {
+     "id": 3533,
+     "creation_date": "2020-01-30T09:49:37+01:00",
+     "name": "Open Pole",
+     "active": true,
+     "release_type": "open",
+     "color": "#3fff00",
+     "wods_enabled": false,
+     "open_programming": false,
+     "automated_signups": false,
+     "equal_gender_split": false,
+     "image": "plan/8fdbe033-c825-43c6-a1e6-00b926286097.png",
+     "required_signups": 0,
+     "cancellation_period": 0
+    },
+    "active": 1,
+    "day0": 0,
+    "day1": 0,
+    "day2": 0,
+    "day3": 0,
+    "day4": 1,
+    "day5": 0,
+    "day6": 0,
+    "type": "recurring",
+    "starts_on": "2026-09-05",
+    "automated_cancellation": {
+     "name": "NONE",
+     "value": 0
+    },
+    "signup_after_start": true,
+    "free": false,
+    "number_of_signed_members": 1,
+    "number_of_signed_males": 0,
+    "number_of_signed_females": 1,
+    "number_of_waitlist_members": 0,
+    "cancelled": 0,
+    "removed": 0,
+    "available_for_member": false,
+    "signed_athletes_names": ""
+   },
+   {
+    "filters": [],
+    "prepared_filters": [],
+    "start_time": 1080,
+    "end_time": 1140,
+    "class_limit": 6,
+    "classes_coaches": [
+     {
+      "id": 499946,
+      "public_coach": {
+       "id": 66581,
+       "first_name": "Bez",
+       "last_name": "Instruktora",
+       "state": 1,
+       "sex": 2,
+       "user_permissions": [],
+       "lang": "pl",
+       "bounced": 0,
+       "family_account": false
+      }
+     }
+    ],
+    "classroom": {
+     "id": 17,
+     "name": "Sala 2"
+    },
+    "id": "cls_88bQ9H",
+    "created_at": "2026-08-14T15:25:48+02:00",
+    "updated_at": "2026-08-14T15:25:48+02:00",
+    "plan": {
+     "id": 3533,
+     "creation_date": "2020-01-30T09:49:37+01:00",
+     "name": "Open Pole",
+     "active": true,
+     "release_type": "open",
+     "color": "#3fff00",
+     "wods_enabled": false,
+     "open_programming": false,
+     "automated_signups": false,
+     "equal_gender_split": false,
+     "image": "plan/8fdbe033-c825-43c6-a1e6-00b926286097.png",
+     "required_signups": 0,
+     "cancellation_period": 0
+    },
+    "active": 1,
+    "day0": 0,
+    "day1": 0,
+    "day2": 0,
+    "day3": 0,
+    "day4": 1,
+    "day5": 0,
+    "day6": 0,
+    "type": "recurring",
+    "starts_on": "2026-09-05",
+    "automated_cancellation": {
+     "name": "NONE",
+     "value": 0
+    },
+    "signup_after_start": true,
+    "free": false,
+    "number_of_signed_members": 0,
+    "number_of_signed_males": 0,
+    "number_of_signed_females": 0,
+    "number_of_waitlist_members": 0,
+    "cancelled": 0,
+    "removed": 0,
+    "available_for_member": false,
+    "signed_athletes_names": ""
+   },
+   {
+    "filters": [],
+    "prepared_filters": [],
+    "start_time": 1085,
+    "end_time": 1145,
+    "class_limit": 12,
+    "classes_coaches": [
+     {
+      "id": 494447,
+      "public_coach": {
+       "id": 66954,
+       "first_name": "Sara",
+       "last_name": "Kozłowska",
+       "state": 1,
+       "sex": 2,
+       "user_permissions": [],
+       "lang": "pl",
+       "bounced": 0,
+       "family_account": false
+      }
+     }
+    ],
+    "classroom": {
+     "id": 16,
+     "name": "Sala 3"
+    },
+    "id": "cls_88bjR1",
+    "created_at": "2026-08-02T12:19:25+02:00",
+    "updated_at": "2026-08-02T12:19:25+02:00",
+    "plan": {
+     "id": 41402,
+     "creation_date": "2026-07-15T12:31:30+02:00",
+     "name": "Exotic by Sara",
+     "active": true,
+     "release_type": "open",
+     "color": "#fb03ff",
+     "wods_enabled": false,
+     "open_programming": false,
+     "automated_signups": true,
+     "equal_gender_split": false,
+     "required_signups": 4,
+     "cancellation_period": 720
+    },
+    "active": 1,
+    "day0": 0,
+    "day1": 0,
+    "day2": 0,
+    "day3": 0,
+    "day4": 1,
+    "day5": 0,
+    "day6": 0,
+    "type": "recurring",
+    "starts_on": "2026-09-05",
+    "automated_cancellation": {
+     "name": "FROM_PLAN",
+     "value": 2
+    },
+    "signup_after_start": true,
+    "free": false,
+    "number_of_signed_members": 5,
+    "number_of_signed_males": 0,
+    "number_of_signed_females": 5,
+    "number_of_waitlist_members": 0,
+    "cancelled": 0,
+    "removed": 0,
+    "available_for_member": false,
+    "signed_athletes_names": ""
+   }
+  ]
+ ],
+ "success": true
+}

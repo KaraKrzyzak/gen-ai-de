@@ -1,0 +1,1655 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="host" content="cpVMW-APP02" />
+<meta name="version" content="20261110.14.masterDeploy" />
+<title>Kalendarz zajęć</title>
+<meta name="Description" content="Kalendarz zajęć" />
+<meta name="Keywords" content="Kalendarz zajęć" />
+<meta name="Robots" content="index,follow" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link href="/content/v1/css/all?v=DVrCp0mVGcdV5BYhW03O34107ki44IM0VacFsfvrYHE1" rel="stylesheet"/>
+
+
+<link href="/Content/v1/Css/styles.css?v=202611101359" rel="stylesheet" type="text/css" /> 
+
+<link rel="stylesheet" type="text/css" href="https://statics.efitness.com.pl/userfilespublic/1767/Styles/style.css?v=202611101359"  />
+<script src="/content/shared/js/all?v=8euOXYMdzruDr2De5TkTgln4Zmk0ggrL098MH_BSrnU1"></script>
+
+<script src="/content/shared/js/pl?v=4DE2Kql3H_Ik2rxLCJA48mE4Iz44aIMCAEuqBvmaVbs1"></script>
+
+<script src="/content/v1/js/all?v=ropRCOQKWaW8qvPCDhGuNIuFygVNe-x3NvkKUi8AyqM1"></script>
+
+
+<!--[if lt IE 9]>
+<script src="/Content/shared/Scripts/html5shiv.js" type="text/javascript"></script>
+<![endif]-->
+
+
+
+<script type='text/javascript'>
+    $(document).ready(function () {
+		function mobileIcons() {
+			if(!$('html[lang=pl]').length) {
+                $('.google-play').attr('src', "/Content/shared/images/google-play.png");
+                $('.app-store').attr('src', "/Content/shared/images/app-store.png");
+			}
+			var gplaysrc = $('.google-play').attr('src');
+		}
+		mobileIcons();
+	
+        var pathName = window.location.pathname;
+		var memberZoneView = getQueryStringParameterByName('m_v');
+		if(memberZoneView != null && memberZoneView != '')
+		    pathName = pathName + "?m_v=" + memberZoneView;
+			
+		var selector = '.mainmenu li.flat a[href="' + pathName + '"]';
+		if($(selector).length = 1){
+		   $(selector).addClass('active');
+		}
+		if(pathName == '/')
+		  $('#menu-news').addClass('active');
+		  
+		if ($('#cookiebanner').exists() && $.cookie('bannercookie') == 'true') {
+		  $('#cookiebanner').hide();
+		}
+        
+        $('#closecookiebanner').click(function(e){
+		  e.preventDefault();
+		  $('#cookiebanner').hide();
+		  $.cookie('bannercookie', 'true', { expires: 365 });
+		});
+        $('ul.mainmenu > li').on({
+            touchstart: function () {
+                $(this).addClass('touched');
+            },
+            mouseenter: function () {
+                var $this = $(this);
+                if (! $this.hasClass('touched')) {
+                    $this.children('ul').addClass('submenu-open');
+                }
+            },
+            mouseleave: function () {
+                var $this = $(this);
+                if (! $this.hasClass('touched')) {
+                    $this.children('ul').removeClass('submenu-open');
+                }
+            },
+            click: function () {
+                $(this).children('ul').toggleClass('submenu-open');
+            }
+        })
+
+		$('.club-network').hide();
+		var clubs = [{"name":"Energy Club ul. T. Wendy","id":1067,"url":"energyclub-gdynia.cms.efitness.com.pl","calendar":true,"hasPersonalTraining":false},{"name":"Energy Club ul. Wielkopolska","id":1767,"url":"energyclub-gdynia2.cms.efitness.com.pl","calendar":true,"hasPersonalTraining":false}];
+
+		if (clubs.length > 0) {
+		    $('.club-one-instance').hide();
+		    $('.club-network').show();
+		    $.each(clubs, function (index, club) {
+		        var li = $('<li/>').appendTo($('#calendar-submenu'));
+		        var li2 = $('<li/>').appendTo($('#buy-ticket-submenu'));
+                var li3 = $('<li/>').appendTo($('#buy-gift-submenu'));
+                var li4 = $('<li/>').appendTo($('#prospect-submenu'));
+                var li5 = $('<li/>').appendTo($('#buy-personal-training-submenu'));
+		        if(club.calendar)
+		            $('<a/>').text(club.name).attr('href', '//' + club.url + '/kalendarz-zajec').appendTo(li);
+		        $('<a/>').text(club.name).attr('href', '//' + club.url+ '/kup-karnet?club=true').appendTo(li2);
+				$('<a/>').text(club.name).attr('href', '//' + club.url+ '/kup-prezent?club=true').appendTo(li3);
+                $('<a/>').text(club.name).attr('href', '//' + club.url + '/potencjalny?club=true').appendTo(li4);
+                if (club.hasPersonalTraining)
+                    $('<a/>').text(club.name).attr('href', '//' + club.url + '/kup-trening?club=true').appendTo(li5);
+		    });
+		}
+
+		if($.cookie('kiosk') != null)
+		   $('html').addClass('kiosk');
+    });
+</script>
+
+</head>
+<body class="v1" id="club-body-id">
+
+
+<input class="dateFormat" type="hidden" value="yy-mm-dd"/>
+<header>
+<div class="languages">
+    <div class="languagecontainer">
+        <ul class="lang_list tabs">
+                <li id="lang-pl-PL">
+                    <a href="#" class="change-language-link" title="Polski" meta:lang="pl-PL">
+                        Pl
+                    </a>
+                </li>
+                <li id="lang-en-GB">
+                    <a href="#" class="change-language-link" title="English" meta:lang="en-GB">
+                        En
+                    </a>
+                </li>
+                <li id="lang-de-DE">
+                    <a href="#" class="change-language-link" title="Deutsch" meta:lang="de-DE">
+                        De
+                    </a>
+                </li>
+                <li id="lang-ru-RU">
+                    <a href="#" class="change-language-link" title="русский" meta:lang="ru-RU">
+                        Ru
+                    </a>
+                </li>
+        </ul>
+    </div><!-- languagecontainer end -->
+</div><!-- languagecontainer end -->
+<div class="topbanner">
+<div class="container">
+<a href="" title="Banner" class="bannerlink"></a>
+<a href="" class="logo"></a>
+<a href="#" class="open-mobile-menu"><i class="fa fa-bars" aria-hidden="true"></i></a>
+</div><!-- container end -->
+</div><!-- topbanner end -->
+<nav><div class="menucontainer">
+         <ul class="mainmenu">
+             
+             <li class="flat"><a href="/na-terenie-klubu" id="menu-members-inside-club" title="Na terenie klubu">Na terenie klubu</a></li>
+             
+             
+             
+             <li class="flat club-one-instance"><a href="/kalendarz-zajec" title="Grafik zajęć">Grafik zajęć</a></li>
+             <li class="club-network dropdown">
+                 <span>Grafik zajęć</span>
+                 <ul id="calendar-submenu" class="submenu"></ul>
+             </li>
+             
+             
+             <li class="flat club-one-instance"><a href="/kup-karnet" title="Kup karnet">Kup karnet</a></li>
+             <li class="club-network dropdown">
+                 <span>Kup karnet</span>
+                 <ul id="buy-ticket-submenu" class="submenu"></ul>
+             </li>
+             
+             
+             
+             
+             <li class="flat club-one-instance"><a href="/kup-prezent" title="Kup prezent">Kup prezent</a></li>
+             <li class="club-network dropdown">
+                 <span>Kup prezent</span>
+                 <ul id="buy-gift-submenu" class="submenu"></ul>
+             </li>
+             
+             <li class="flat"><a href="/strefa-klienta?m_v=agreement" title="Członkostwo">Członkostwo</a></li>
+             
+         </ul>
+<div class="modulebox">
+	<div class="moduleHtml">
+	
+	</div>
+	<div class="moduleContent">
+	
+<ul class="loginmenu">
+    <li><a id="loginmenu_log_in" href="#" title="Zaloguj się">Zaloguj się &raquo;</a></li>
+</ul>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#loginmenu_log_in').click(function (e) {
+            e.preventDefault();
+            window.location = "/Login/SystemLogin" + "?returnurl=" + encodeURIComponent(window.location);
+        });
+    });
+</script>
+
+	</div>
+</div>
+
+
+</div><!-- menucontainer end --></nav>
+</header>
+
+<div id="widecontainer">
+<div id="innercontainer" class="clearfix">
+<div class="modulebox">
+	<div class="moduleHtml">
+	
+	</div>
+	<div class="moduleContent">
+	
+<section class="calendar_header">
+    
+    <h1>Grafik zajęć (Energy Club ul. Wielkopolska)</h1>
+    
+    <div id="calendar_upper_text" class="textcontent">
+        <p class="tinymce-item"><span style="background-color: rgba(251, 238, 184, 1)">Zapisy na zajęcia są obowiązkowe. Jeśli nie masz aktywnej umowy lub posiadasz kartę partnerską, kliknij przycisk „Zapisz się”, a następnie zaloguj się lub kliknij „Zarejestruj się” i wybierz karnet za 0 zł, który utworzy Ci konto klienta.&nbsp;</span></p>
+    </div>
+      
+    <div style="clear:both;"></div>
+    <div id="calendar_registered_meetings" class="calendar_registered_meetings_0">
+        
+    </div>
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+        $(document).on('click','.calendar_cancel_reservation', function (e) {
+            e.preventDefault();
+            if (confirm($(this).attr('title'))) {
+                var id = $(this).attr('meta:id');
+                var sid = $(this).attr('meta:sid');
+                var mid = $(this).attr('meta:mid');
+                $(this).hide();
+                $.post("/Schedule/CancelReservation", { id: id, all: $('#calendar_show_all_reservations').val(), memberID: mid }, function (data) {
+                    $('.calendar_registered_meetings_'+mid).html(data);
+                    resigned(sid);
+                });
+            }
+        });
+
+        $(document).on('click','.calendar_show_all', function (e) {
+            e.preventDefault();
+            var mid = $(this).attr('meta:mid');
+            $.get("/Schedule/GetRegisteredMeetings?memberID="+mid, { all: true }, function (data) {
+                $('.calendar_registered_meetings_'+mid).html(data);
+            });
+        });
+
+        $(document).on('click','.calendar_show_less', function (e) {
+            e.preventDefault();
+            var index = 0;
+            var mid = $(this).attr('meta:mid');
+            $('.calendar_registered_meetings_' + mid +' ol li').each(function () {
+                index++;
+                if (index > 3)
+                    $(this).hide();
+            });
+            $(this).hide();
+            if (index > 3)
+                $('.calendar_registered_meetings_' + mid + ' .calendar_show_all').show();
+        });
+
+           $(document).on('click','.calendar-pay-for-class2', function (e) {
+            e.preventDefault();
+            openScheduleItem($(this).data('schedule-item-id'), $(this).data('member-id'));
+        });
+    });
+</script>
+</section><!-- calendar_header end -->
+
+<section class="calendar_main">
+    
+
+
+<div class="filters clearfix">
+    
+    <form id="network_search_filter_form" method="get">
+        <label>Wyszukaj w sieci</label>
+        
+        <input type="hidden" value="Search" name="view" />
+        <input type="hidden" value="2026-11-11" name="day" />
+        <input id="calendar-search" name="Search" value="" data-url="/Schedule/SearchInstructorAndSpecialization" />
+        <input type="hidden" value="" id="SearchInstructorIDs" />
+        <input type="hidden" value="" id="SearchSpecializationIDs" />
+        <div id="SearchInstructorIdContainer"></div>
+        <div id="SearchSpecializationIdContainer"></div>
+        <button id="search-btn" type="submit">Szukaj</button>
+        
+    </form>
+    
+
+
+    <div class="filters-block">
+        
+        <form id="calendar_filters_form" method="post" action="#">
+            
+            <label>Filtruj wyniki po:</label>
+            <select id="calendar_type_select">
+                <option value="">Wszystkie typy zajęć</option>
+                
+                <option  value="113303" >Afro Fusion </option>
+                
+                <option  value="69448" >Bachata - początkujący pary P1 </option>
+                
+                <option  value="110216" >Bachata Ladies Heels &amp; Flow </option>
+                
+                <option  value="98994" >Bachata Ladies Solo </option>
+                
+                <option  value="69450" >Bachata Ladies Styling </option>
+                
+                <option  value="113246" >Bachata Open Musicality &amp; Choreo </option>
+                
+                <option  value="107324" >Bachata Pary OPEN </option>
+                
+                <option  value="71432" >BACHATA PARY P2 </option>
+                
+                <option  value="80902" >Bachata PARY P3 średniozaawansowany  </option>
+                
+                <option  value="109478" >Barre </option>
+                
+                <option  value="74372" >Body Pump  </option>
+                
+                <option  value="98293" >Brazylijskie pośladki </option>
+                
+                <option  value="90767" >Core &amp; Stretching </option>
+                
+                <option  value="110080" >EXOTIC BASIC P1 </option>
+                
+                <option  value="85058" >Fat burning - spalanie  </option>
+                
+                <option  value="109056" >Fuego Ladies </option>
+                
+                <option  value="112206" >GYM INTRO D&#211;Ł </option>
+                
+                <option  value="112205" >GYM INTRO G&#211;RA </option>
+                
+                <option  value="80863" >High Heels </option>
+                
+                <option  value="80821" >Joga </option>
+                
+                <option  value="92586" >Kickboxing początkujący </option>
+                
+                <option  value="95220" >Kizomba Pary P2 </option>
+                
+                <option  value="98993" >Kizomba pary P3 </option>
+                
+                <option  value="108363" >Lejdis Boks </option>
+                
+                <option  value="91403" >MMA grupa średniozaawansowana </option>
+                
+                <option  value="82896" >Płaski brzuch i stretching  </option>
+                
+                <option  value="107336" >POLE CHOREO BASIC </option>
+                
+                <option  value="107387" >Pole Dance P1/P2 </option>
+                
+                <option  value="92712" >Reggaeton </option>
+                
+                <option  value="99534" >Rozciąganie FLEXY </option>
+                
+                <option  value="113499" >Rueda de Casino P1 </option>
+                
+                <option  value="95896" >Rueda de Casino P3 </option>
+                
+                <option  value="95897" >Salsa Kubańska Pary P3 </option>
+                
+                <option  value="88712" >Salsa Pary P2 </option>
+                
+                <option  value="78053" >Sexy Dance </option>
+                
+                <option  value="71673" >Shape  </option>
+                
+                <option  value="89860" >SIŁA </option>
+                
+                <option  value="109443" >SPARINGI: BOKS KICKBOXING OPEN </option>
+                
+                <option  value="85548" >Stretching </option>
+                
+                <option  value="99533" >SZPAGAT </option>
+                
+                <option  value="87679" >Tabata </option>
+                
+                <option  value="82949" >TBC total body conditioning  </option>
+                
+                <option  value="104211" >Trening funkcjonalny </option>
+                
+                <option  value="87680" >Trening Obwodowy </option>
+                
+                <option  value="96316" >Yogalates </option>
+                
+                <option  value="84350" >Zdrowy kręgosłup i stretching  </option>
+                
+            </select>
+            
+            <select id="calendar_instructor_select">
+                <option value="">Wszyscy instruktorzy</option>
+                
+                <option  value="122304" >. Jasmina</option>
+                
+                <option  value="131485" >Agata Pyszczuk</option>
+                
+                <option  value="137318" >Alicja</option>
+                
+                <option  value="126347" >Angela Ciskowska</option>
+                
+                <option  value="138756" >Ania</option>
+                
+                <option  value="143538" >Asia</option>
+                
+                <option  value="129973" >Ayari Katarzyna</option>
+                
+                <option  value="143558" >Bral Daria </option>
+                
+                <option  value="149527" >Bronk Ania</option>
+                
+                <option  value="139886" >Damska Laura</option>
+                
+                <option  value="145924" >Dora</option>
+                
+                <option  value="128312" >Dorota Żywko</option>
+                
+                <option  value="148418" >Emilia</option>
+                
+                <option  value="149947" >Ewa</option>
+                
+                <option  value="149526" >Golak Marysia</option>
+                
+                <option  value="134248" >Kacper</option>
+                
+                <option  value="134000" >Kasia Kowalska</option>
+                
+                <option  value="144141" >Kate</option>
+                
+                <option  value="148835" >KINAS Anastazja</option>
+                
+                <option  value="117373" >Magdalena Najdrowska</option>
+                
+                <option  value="120836" >Marysia Pasik</option>
+                
+                <option  value="144789" >Monika</option>
+                
+                <option  value="123373" >Nicola Egwuatu</option>
+                
+                <option  value="147553" >Ochocińska Oliwia</option>
+                
+                <option  value="114340" >Paulina Stachowiak</option>
+                
+                <option  value="132038" >Paulina&amp;Kuba</option>
+                
+                <option  value="136990" >Quba</option>
+                
+                <option  value="146115" >Sandra</option>
+                
+                <option  value="123626" >Sandra &amp; Wojtek</option>
+                
+                <option  value="130764" >Sandra Giza</option>
+                
+                <option  value="128724" >Seweryn Spręga</option>
+                
+                <option  value="138163" >Sylwek</option>
+                
+                <option  value="48306" >Sylwia </option>
+                
+                <option  value="132845" >Szreder Weronika</option>
+                
+                <option  value="139444" >Tomek</option>
+                
+                <option  value="149312" >Wiktor</option>
+                
+                <option  value="135904" >Wirginia</option>
+                
+                <option  value="120877" >Zastępstwo</option>
+                
+            </select>
+            
+            <select id="calendar_room_select">
+                <option value="">Wszystkie sale</option>
+                
+                <option  value="4341">Nab&#243;r - ZAPISZ SIĘ NA ZAJĘCIA!</option>
+                
+                <option  value="4298">Sala fitness </option>
+                
+                <option  value="4727">Sala fitness II</option>
+                
+                <option  value="4299">Sauna</option>
+                
+                <option  value="4301">Strefa - siłownia </option>
+                
+                <option  value="4300">Strefa - stretching </option>
+                
+                <option  value="4302">UWAGA - ZAJĘCIA ODWOŁANE </option>
+                
+            </select>
+            
+            
+            <select id="calendar_tags_select" multiple="multiple" title="Tag">
+                <option value="">Wszystkie tagi</option>
+                
+            </select>
+        </form>
+        
+
+        <a title="Wyczyść filtry" href="/kalendarz-zajec" id="calendar_filters_clear">Wyczyść filtry »</a>
+    </div>
+</div>
+<!-- filters end -->
+
+<script type='text/javascript'>
+
+    $(document).ready(function () {
+        $("#calendar_type_select").change(function () {
+            window.location = "/kalendarz-zajec?type=" + $(this).val();
+        });
+        
+        $("#calendar_instructor_select").change(function () {
+            window.location = "/kalendarz-zajec?instructor=" + $(this).val();
+        });
+
+        $("#calendar_room_select").change(function () {
+            window.location = "/kalendarz-zajec?room=" + $(this).val();
+        });
+        
+       
+      
+
+        $("#calendar_tags_select").change(function () {
+            var selectedTags = $(this).val();
+            
+            // Check if "All Tags" (empty value) is in the selection
+            if (selectedTags && selectedTags.indexOf('') > -1) {
+                // "All Tags" was selected - clear all selections and navigate to clear URL
+                $(this).val(null);
+                window.location = "/kalendarz-zajec";
+                return;
+            }
+            
+            if (selectedTags && selectedTags.length > 0) {
+                var baseUrl = "/kalendarz-zajec?tag=";
+                var queryString = selectedTags.map(function(t) { return "tag=" + t; }).join("&");
+                var separator = baseUrl.indexOf('?') > -1 ? '&' : '?';
+                window.location = baseUrl + separator + queryString;
+            } else {
+                window.location = "/kalendarz-zajec";
+            }
+        });
+
+        //autocomplete dla instruktorow i nazw zajec
+        $('#calendar-search').autocomplete({
+            source: function (request, response) {
+                var url = $('#calendar-search').data("url");
+                return $.getJSON(url, { selectCompanyID: "", term: $('#calendar-search').val() }, response);
+            },
+            minLength: 3,
+            select: function (event, ui) {
+                $('#calendar-search').val(ui.item.label);
+                if (ui.item.type == '1') {
+                    $('#SearchInstructorIDs').val(ui.item.id);
+                    AddSearchIDs('SearchInstructor');
+                    $('#network_search_filter_form').submit();
+                }
+
+                if (ui.item.type == '2') {
+                    $('#SearchSpecializationIDs').val(ui.item.id);
+                    AddSearchIDs('SearchSpecialization');
+                    $('#network_search_filter_form').submit();
+                }
+            }
+        });
+
+        function AddSearchIDs(prefix) {
+            var values = $('#' + prefix + "IDs").val().split(',');
+            var container = $('#' + prefix + "IdContainer");
+            container.empty();
+            $.each(values, function (key, value) {
+                container.append('<input type="hidden" name="' + prefix + 'ID" value="' + value + '" />');
+            });
+        }
+
+        $('#calendar-search').keyup(function (e) {
+            if (e.which != 13) {
+                $(this).nextAll("input").val('');
+                $('[name="SearchSpecializationID"]').val('');
+                $('[name="SearchInstructorID"]').val('');
+            }
+        });
+
+        $('.print').click(function (e) {
+            e.preventDefault();
+        });
+
+        
+    });
+   
+</script>
+
+<div class="month_chooser">
+    <a class="left" title="Październik" href="/kalendarz-zajec?day=2026-10-11">«</a>
+    <span>Listopad</span>
+    <a class="right" title="Grudzień" href="/kalendarz-zajec?day=2026-12-11">»</a>
+</div><!-- monthchooser end -->
+<div class="daysandprint">
+    
+      <a title="Dzień" href="/kalendarz-zajec?view=DayByHour" class="">Dzień</a>
+	
+      <a title="Tydzień" href="/kalendarz-zajec?view=WeekByHour" class="active">Tydzień</a>
+	
+      <a title="Plan" href="/kalendarz-zajec?view=Agenda" class="">Plan</a>
+	
+      <a title="Sale" href="/kalendarz-zajec?view=DayRoom" class="">Sale</a>
+	
+   
+</div><!-- daysandprint -->
+<div class="week_chooser">
+  
+  <a class="left" title="Poprzedni" href="/kalendarz-zajec?day=2026-11-04">«</a>
+  <span>
+       2026-11-09
+           do 
+           2026-11-15
+       
+  </span>
+  <a class="right" title="Dalej" href="/kalendarz-zajec?day=2026-11-18">»</a>
+</div><!-- week_chooser end -->
+<div id="OverlayEvent" class="overlay"><div id="OverlayEventContent" class="popup_window"></div></div>
+<div id="OverlayLogin" class="overlay"><div id="OverlayLoginContent" class="modal"></div></div>
+<div id="OverlayRegistration" class="overlay"><div id="OverlayRegistrationContent" class="modal"></div></div>
+<div id="payment-form-overlay" class="overlay"><div id="overlay-inner"></div></div>
+</section>
+
+<div id="scheduler">
+
+<div class="scrollingframe">
+<table class="calendar_table week">
+ <thead>
+  <tr>
+      <td>Godzina</td>
+      
+
+<td class="" >
+        <a class="scheduler-go-to-day" meta:date="2026-11-09">Poniedziałek</a>
+</td>
+
+
+<td class="" >
+        <a class="scheduler-go-to-day" meta:date="2026-11-10">Wtorek</a>
+</td>
+
+
+<td class="current" >
+        <a class="scheduler-go-to-day" meta:date="2026-11-11">Środa</a>
+</td>
+
+
+<td class="" >
+        <a class="scheduler-go-to-day" meta:date="2026-11-12">Czwartek</a>
+</td>
+
+
+<td class="" >
+        <a class="scheduler-go-to-day" meta:date="2026-11-13">Piątek</a>
+</td>
+
+
+<td class="" >
+        <a class="scheduler-go-to-day" meta:date="2026-11-14">Sobota</a>
+</td>
+
+
+<td class="" >
+        <a class="scheduler-go-to-day" meta:date="2026-11-15">Niedziela</a>
+</td>
+
+  </tr>
+ </thead>
+ <tbody>	
+      
+     <tr>
+         
+         <td class="hour"  >
+             09:00
+         </td>
+         
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+	<td>
+	  
+<div class="event" meta:id="38084133" style="color:#000000;background-color:#ff2f00;">
+
+  <span class="eventlength">
+      55 min
+      
+  </span>
+  <span class="availability">
+      
+         <span class="availability-number">16</span> wolnych
+      
+  </span>
+
+
+        <p class="event_name">TBC total body conditioning </p>
+  
+
+  <p class="instructor">Emilia</p>
+  <p class="room">Sala fitness </p>
+  
+</div>
+
+	</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+     </tr>
+      
+     <tr>
+         
+         <td class="hour"  >
+             10:00
+         </td>
+         
+	<td>
+	  
+<div class="event" meta:id="38084184" style="color:#000000;background-color:#ff2f00;">
+
+  <span class="eventlength">
+      55 min
+      
+  </span>
+  <span class="availability">
+      
+         <span class="availability-number">11</span> wolnych
+      
+  </span>
+
+
+        <p class="event_name">Zdrowy kręgosłup i mocny brzuch </p>
+  
+
+  <p class="instructor">Kate</p>
+  <p class="room">Sala fitness </p>
+  
+</div>
+
+	</td>
+
+	<td>
+	  
+<div class="event" meta:id="38536685" style="color:#000000;background-color:#22e730;">
+
+  <span class="eventlength">
+      50 min
+      
+  </span>
+  <span class="availability">
+      
+         <span class="availability-number">0</span> wolnych
+      
+  </span>
+
+
+        <p class="event_name">GYM INTRO G&#211;RA</p>
+  
+
+  <p class="instructor">Kacper</p>
+  <p class="room">Strefa - siłownia </p>
+  
+</div>
+
+	</td>
+
+	<td>
+	  
+<div class="event" meta:id="38084209" style="color:#000000;background-color:#ff2f00;">
+
+  <span class="eventlength">
+      55 min
+      
+  </span>
+  <span class="availability">
+      
+         <span class="availability-number">-1</span> wolnych
+      
+  </span>
+
+
+        <p class="event_name">Core &amp; Stretching</p>
+  
+
+  <p class="instructor">Kate</p>
+  <p class="room">UWAGA - ZAJĘCIA ODWOŁANE </p>
+  
+</div>
+
+	</td>
+
+	<td>
+	  
+<div class="event" meta:id="38084156" style="color:#000000;background-color:#ff2f00;">
+
+  <span class="eventlength">
+      55 min
+      
+  </span>
+  <span class="availability">
+      
+         <span class="availability-number">13</span> wolnych
+      
+  </span>
+
+
+        <p class="event_name">Zdrowy kręgosłup i stretching </p>
+  
+
+  <p class="instructor">Emilia</p>
+  <p class="room">Sala fitness </p>
+  
+</div>
+
+	</td>
+
+	<td >&nbsp;</td>
+
+	<td>
+	  
+<div class="event" meta:id="36768971" style="color:#000000;background-color:#c7ebf9;">
+
+  <span class="eventlength">
+      50 min
+      
+  </span>
+  <span class="availability">
+      
+         <span class="availability-number">8</span> wolnych
+      
+  </span>
+
+
+        <p class="event_name">ABT - brzuch, uda, pośladki </p>
+  
+
+  <p class="instructor">Marysia Pasik</p>
+  <p class="room">Sala fitness </p>
+  
+</div>
+
+	</td>
+
+	<td >&nbsp;</td>
+
+     </tr>
+      
+     <tr>
+         
+         <td class="hour"  >
+             11:00
+         </td>
+         
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+	<td>
+	  
+<div class="event" meta:id="36768635" style="color:#000000;background-color:#c7ebf9;">
+
+  <span class="eventlength">
+      50 min
+      
+  </span>
+  <span class="availability">
+      
+         <span class="availability-number">14</span> wolnych
+      
+  </span>
+
+
+        <p class="event_name">Zdrowy kręgosłup i stretching </p>
+  
+
+  <p class="instructor">Marysia Pasik</p>
+  <p class="room">Sala fitness </p>
+  
+</div>
+
+	</td>
+
+	<td >&nbsp;</td>
+
+     </tr>
+      
+     <tr>
+         
+         <td class="hour"  >
+             17:00
+         </td>
+         
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+	<td>
+	  
+<div class="event" meta:id="38829677" style="color:#000000;background-color:#ff6600;">
+
+  <span class="eventlength">
+      55 min
+      
+  </span>
+  <span class="availability">
+      
+         <span class="availability-number">22</span> wolnych
+      
+  </span>
+
+
+        <p class="event_name">Shape </p>
+  
+
+  <p class="instructor">Agata Pyszczuk</p>
+  <p class="room">Sala fitness </p>
+  
+</div>
+
+	</td>
+
+     </tr>
+      
+     <tr>
+         
+         <td class="hour"  >
+             17:15
+         </td>
+         
+	<td>
+	  
+<div class="event" meta:id="36768360" style="color:#000000;background-color:#ff2f00;">
+
+  <span class="eventlength">
+      55 min
+      
+  </span>
+  <span class="availability">
+      
+         <span class="availability-number">10</span> wolnych
+      
+  </span>
+
+
+        <p class="event_name">Trening funkcjonalny</p>
+  
+
+  <p class="instructor">Kate</p>
+  <p class="room">Sala fitness </p>
+  
+</div>
+
+	</td>
+
+	<td >&nbsp;</td>
+
+	<td>
+	  
+<div class="event" meta:id="36768832" style="color:#000000;background-color:#ff6600;">
+
+  <span class="eventlength">
+      55 min
+      
+  </span>
+  <span class="availability">
+      
+         <span class="availability-number">0</span> wolnych
+      
+  </span>
+
+
+        <p class="event_name">Trening funkcjonalny</p>
+  
+
+  <p class="instructor">Kate</p>
+  <p class="room">UWAGA - ZAJĘCIA ODWOŁANE </p>
+  
+</div>
+
+	</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+     </tr>
+      
+     <tr>
+         
+         <td class="hour"  >
+             18:00
+         </td>
+         
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+	<td>
+	  
+<div class="event" meta:id="38829703" style="color:#000000;background-color:#FF6600;">
+
+  <span class="eventlength">
+      60 min
+      
+  </span>
+  <span class="availability">
+      
+         <span class="availability-number">21</span> wolnych
+      
+  </span>
+
+
+        <p class="event_name">Joga</p>
+  
+
+  <p class="instructor">Agata Pyszczuk</p>
+  <p class="room">Sala fitness </p>
+  
+</div>
+
+	</td>
+
+     </tr>
+      
+     <tr>
+         
+         <td class="hour"  >
+             18:10
+         </td>
+         
+	<td>
+	  
+<div class="event" meta:id="36768147" style="color:#000000;background-color:#ff2f00;">
+
+  <span class="eventlength">
+      50 min
+      
+  </span>
+  <span class="availability">
+      
+         <span class="availability-number">4</span> wolnych
+      
+  </span>
+
+
+        <p class="event_name">Płaski brzuch i stretching </p>
+  
+
+  <p class="instructor">Kate</p>
+  <p class="room">Sala fitness </p>
+  
+</div>
+
+	</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+     </tr>
+      
+     <tr>
+         
+         <td class="hour"  >
+             18:15
+         </td>
+         
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+	<td>
+	  
+<div class="event" meta:id="38360083" style="color:#000000;background-color:#ff6600;">
+
+  <span class="eventlength">
+      55 min
+      
+  </span>
+  <span class="availability">
+      
+         <span class="availability-number">-1</span> wolnych
+      
+  </span>
+
+
+        <p class="event_name">Brazylijskie pośladki</p>
+  
+
+  <p class="instructor">Nicola Egwuatu</p>
+  <p class="room">UWAGA - ZAJĘCIA ODWOŁANE </p>
+  
+</div>
+
+	</td>
+
+	<td>
+	  
+<div class="event" meta:id="36768405" style="color:#000000;background-color:#ff7e00;">
+
+  <span class="eventlength">
+      60 min
+      
+  </span>
+  <span class="availability">
+      
+         <span class="availability-number">19</span> wolnych
+      
+  </span>
+
+
+        <p class="event_name">Joga</p>
+  
+
+  <p class="instructor">Ania</p>
+  <p class="room">Sala fitness </p>
+  
+</div>
+
+	</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+     </tr>
+      
+     <tr>
+         
+         <td class="hour"  >
+             18:30
+         </td>
+         
+	<td >&nbsp;</td>
+
+	<td>
+	  
+<div class="event" meta:id="36769005" style="color:#000000;background-color:#ff6600;">
+
+  <span class="eventlength">
+      60 min
+      
+  </span>
+  <span class="availability">
+      
+         <span class="availability-number">10</span> wolnych
+      
+  </span>
+
+
+        <p class="event_name">Sztangi </p>
+  
+
+  <p class="instructor">Marysia Pasik</p>
+  <p class="room">Sala fitness </p>
+  
+</div>
+
+	</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+     </tr>
+      
+     <tr>
+         
+         <td class="hour"  >
+             19:00
+         </td>
+         
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+	<td>
+	  
+<div class="event" meta:id="38536788" style="color:#000000;background-color:#ff2f00;">
+
+  <span class="eventlength">
+      50 min
+      
+  </span>
+  <span class="availability">
+      
+         <span class="availability-number">1</span> wolnych
+      
+  </span>
+
+
+        <p class="event_name">GYM INTRO G&#211;RA</p>
+  
+
+  <p class="instructor">Ewa</p>
+  <p class="room">Strefa - siłownia </p>
+  
+</div>
+
+	</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+     </tr>
+      
+     <tr>
+         
+         <td class="hour"  >
+             19:15
+         </td>
+         
+	<td>
+	  
+<div class="event" meta:id="38911921" style="color:#000000;background-color:#e0115f;">
+
+  <span class="eventlength">
+      90 min
+      
+  </span>
+  <span class="availability">
+      
+         <span class="availability-number">10</span> wolnych
+      
+  </span>
+
+
+        <p class="event_name">Afro Fusion</p>
+  
+
+  <p class="instructor">Nicola Egwuatu</p>
+  <p class="room">Sala fitness </p>
+  
+</div>
+
+	</td>
+
+	<td >&nbsp;</td>
+
+	<td>
+	  
+<div class="event" meta:id="36768733" style="color:#000000;background-color:#E0115F;">
+
+  <span class="eventlength">
+      55 min
+      
+  </span>
+  <span class="availability">
+      
+         <span class="availability-number">-8</span> wolnych
+      
+  </span>
+
+
+        <p class="event_name">SALSATION&#174; </p>
+  
+
+  <p class="instructor">Nicola Egwuatu</p>
+  <p class="room">UWAGA - ZAJĘCIA ODWOŁANE </p>
+  
+</div>
+
+	</td>
+
+	<td>
+	  
+<div class="event" meta:id="38911913" style="color:#000000;background-color:#e0115f;">
+
+  <span class="eventlength">
+      90 min
+      
+  </span>
+  <span class="availability">
+      
+         <span class="availability-number">-9</span> wolnych
+      
+  </span>
+
+
+        <p class="event_name">Reggaeton</p>
+  
+
+  <p class="instructor">Nicola Egwuatu</p>
+  <p class="room">Sala fitness </p>
+  
+</div>
+
+	</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+     </tr>
+      
+     <tr>
+         
+         <td class="hour"  >
+             19:30
+         </td>
+         
+	<td >&nbsp;</td>
+
+	<td>
+	  
+<div class="event" meta:id="36768927" style="color:#000000;background-color:#ff6600;">
+
+  <span class="eventlength">
+      60 min
+      
+  </span>
+  <span class="availability">
+      
+         <span class="availability-number">10</span> wolnych
+      
+  </span>
+
+
+        <p class="event_name">Power Pilates </p>
+  
+
+  <p class="instructor">Marysia Pasik</p>
+  <p class="room">Sala fitness </p>
+  
+</div>
+
+	</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+     </tr>
+      
+     <tr>
+         
+         <td class="hour"  >
+             20:15
+         </td>
+         
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+	<td>
+	  
+<div class="event" meta:id="36768684" style="color:#000000;background-color:#ff6600;">
+
+  <span class="eventlength">
+      55 min
+      
+  </span>
+  <span class="availability">
+      
+         <span class="availability-number">-3</span> wolnych
+      
+  </span>
+
+
+        <p class="event_name">Stretching</p>
+  
+
+  <p class="instructor">Nicola Egwuatu</p>
+  <p class="room">UWAGA - ZAJĘCIA ODWOŁANE </p>
+  
+</div>
+
+	</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+	<td >&nbsp;</td>
+
+     </tr>
+     
+ </tbody>
+</table>
+</div><!-- scrollingframe end -->
+<div class="scrollindicator">&larr; &rarr;</div><!-- scrollindicator end -->
+<script type='text/javascript'>
+    function openScheduleItem(item, memberID) {
+        $.get('/schedule/showoverlay', { schiid: item, returnUrl: window.location.pathname, memberID: memberID }, function (data) {
+            if (data == '') {
+                showErrorModal();
+                return;
+            }
+            $('#OverlayEventContent').html(data);
+            $(this).overlay({
+                target: "#OverlayEvent",
+                load: true,
+                fixed: false,
+                mask: { color: '#000', loadSpeed: 0, opacity: 0.9 },
+                onBeforeClose: function () {
+                    $('#OverlayLogin .close').click();
+                },
+                onBeforeLoad: function() { $('body').trigger('overlayReadyToLoad'); },
+                onLoad: function() { $('body').trigger('overlayLoaded'); }
+            });
+        })
+        .fail(function() {
+            showErrorModal();
+        });
+    }
+
+    $(document).ready(function () {
+        $(".event, .schedule-agenda-link, .schedule-item-link-wrap").click(function (e) {
+            if ($(this).attr('meta:id').length > 0) {
+                e.preventDefault();
+                openScheduleItem($(this).attr('meta:id'), null);
+            }           
+            if(clientEvent.callbackIsSet(clientEvent.showScheduleEventCallback) && $(this).hasClass('event') && $(this).attr('meta:id').length > 0){
+                var dataEvent = {};
+                dataEvent.eventName = $(this).find('.event_name').html();
+                dataEvent.eventId = $(this).attr('meta:id');
+                dataEvent.instructor = $(this).find('.instructor').html();
+                dataEvent.memberId = $('#clientEvent_memberID').val() ? $('#clientEvent_memberID').val() : '';
+                clientEvent._showScheduleEvent(dataEvent);
+            }
+        });
+
+        $('.scheduler-go-to-day').each(function () {
+            $(this).formatLink2(['day', 'view'], [$(this).attr('meta:date'), 'DayByHour']);
+        });
+
+        
+        $(".event .replacement-bar").css({ 'color': '#ffffff', 'background-color': '#0033cc' });
+        
+
+        $('.selectHistory').click(function () {
+            var url = "/Schedule/ShowHistory";
+            var childID = $("#ChildID").val();
+            if (childID != null && childID != undefined)
+                url += "?childID=" + childID;
+            $.get(url, function (data) {
+                $('#scheduler').parent().html(data);
+            });
+        })
+    });
+</script>
+</div>
+ <div id="calendar_downer_text" class="textcontent">
+        
+ </div>
+      
+
+<script type='text/javascript'>
+
+    $(document).ajaxComplete(function () {
+        function showMoreOrLess(column_class) {
+            var showChar = 300;
+            var ellipsestext = "...";
+            var moretext = $('#show_less_more').data('show-more');
+            var lesstext = $('#show_less_more').data('show-less');
+            $('.calendar_main .popup_window '+column_class+' > p.event-description').each(function () {
+                var content = $(this).html();
+
+                if (content.length > showChar) {
+
+                    var c = content.substr(0, showChar);
+                    var h = content.substr(showChar, content.length - showChar);
+
+                    var html = c + '<span class="moreellipses">' + ellipsestext + '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="#" class="' + column_class + ' morelink">' + moretext + '</a></span>';
+
+                    $(this).html(html);
+                }
+
+            });
+
+            $(column_class+" .morelink").click(function () {
+                if ($(this).hasClass("less")) {
+                    $(this).removeClass("less");
+                    $(this).html(moretext);
+                } else {
+                    $(this).addClass("less");
+                    $(this).html(lesstext);
+                }
+                $(this).parent().prev().toggle();
+                $(this).prev().toggle();
+                return false;
+            });
+        }
+        showMoreOrLess('.left');
+        showMoreOrLess('.right');
+    });
+    $(function() {
+        $(document).on('click', '.schedule-print-button', function(e) {
+            e.preventDefault();
+
+            if (! $('body').hasClass('schedule-print-active')) {
+                var $schedulePrintHeader = $('.calendar_main').clone();
+                $schedulePrintHeader.hide().addClass('show-on-print').find('.filters').remove();
+
+                $('body').addClass('schedule-print-active');
+                $('#scheduler').prepend($schedulePrintHeader)
+            }
+            window.print();
+        });
+    });
+</script>
+
+
+	</div>
+</div>
+
+
+</div><!-- innercontainer end -->
+</div><!-- container end -->
+<footer>
+    <div class="container">
+        <nav>
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="/na-terenie-klubu" title="Na terenie klubu">Na terenie klubu</a></li>
+                
+                <li><a href="/kup-karnet" title="Kup karnet">Kup karnet</a></li>
+                
+                <li><a href="/kup-prezent" title="Kup prezent">Kup prezent</a></li>
+                <li><a href="/kalendarz-zajec" title="Grafik zajęć">Grafik zajęć</a></li>
+                <li><a href="/strefa-klienta?m_v=agreement" title="Członkostwo">Członkostwo</a></li>
+                
+                
+            </ul>
+        </nav>
+        <address>
+            <p class="h3">Kontakt</p>
+            <p class="h2">Energy Club ul. Wielkopolska 250B</p>
+            <p>ul. Wielkopolska 250B </p>
+            <p>81-531 Gdynia </p>
+            <p></p>
+            <p><a href="mailto:" title=""></a></p>
+            <p></p>
+        </address>
+
+        
+        <address>
+            <p class="h3">Dane firmy</p>
+            <p class="h2">ENERGY PROFIT SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ SPÓŁKA KOMANDYTOWA</p>
+            <p>Tadeusza Wendy 15 </p>
+            <p>81-341  Gdynia</p>
+            <p><a href="mailto:" title=""></a></p>
+            <p>NIP: 5862297696</p>
+            <p>REGON: 361652119</p>
+            <p></p>
+        </address>
+        
+
+        <div class="clr"></div>
+    </div><!-- container end -->
+</footer>
+<aside class="advert">
+    <div class="modulebox">
+	<div class="moduleHtml">
+	
+	</div>
+	<div class="moduleContent">
+	
+	</div>
+</div>
+
+
+    <p>Dumnie wspierany przez <a href='http://www.efitness.pl' target='_blank'>eFitness</a> - profesjonalny system do zarządzania klubami fitness</p>
+</aside>
+
+
+<div class="mobile-icons">
+    <span class="mobile-icons-label">Pobierz aplikację mobilną</span>
+    <a href="https://play.google.com/store/apps/details?id=pl.efitness.mobile&hl=pl"><img src="/Content/shared/images/google-play-pl.png" class="google-play" /></a>
+    <a href="https://itunes.apple.com/pl/app/efitnessapp/id1054978020?l=pl&mt=8"><img src="/Content/shared/images/app-store-pl.png" class="app-store" /></a>
+</div>
+
+
+<script type='text/javascript'>
+    $(function(){
+        if ($('.karnetbox .header').length) {
+            $('.karnetbox .header').matchHeight();
+        }
+    });
+</script>
+</body>
+</html>

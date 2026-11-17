@@ -1,0 +1,204 @@
+{
+ "CalendarData": [
+  {
+   "ZoneName": "Gdańsk, Osowa",
+   "ClassesPerHour": [
+    {
+     "Hour": "1900-01-01T08:00:00",
+     "ClassesPerDay": [
+      [],
+      [
+       {
+        "Id": 965558,
+        "Status": "Bookable",
+        "StatusReason": null,
+        "Name": "TBW (Trening Całego Ciała)",
+        "StartTime": "2026-11-12T08:30:00",
+        "Duration": "PT1H-5M",
+        "BookingIndicator": {
+         "Indicator": 1,
+         "Limit": 30,
+         "Available": 3
+        },
+        "Trainer": "Weronika Dampc",
+        "Users": [],
+        "HasRelatives": false,
+        "AllowBookSeatNumber": false,
+        "IsClassAvailableOnline": false,
+        "ClassRatingSummaryInfo": {
+         "TimeTableId": 57,
+         "RatingsCount": 25178,
+         "Rating": 4.930137421558504,
+         "Ranking": 4.9
+        },
+        "BookingPreReservationId": null
+       }
+      ],
+      [
+       {
+        "Id": 893140,
+        "Status": "FullBooked",
+        "StatusReason": null,
+        "Name": "MOCNY BRZUCH",
+        "StartTime": "2026-11-13T08:30:00",
+        "Duration": "PT1H-5M",
+        "BookingIndicator": {
+         "Indicator": 0,
+         "Limit": 30,
+         "Available": 0
+        },
+        "Trainer": "Adrian Pierzgalski",
+        "Users": [],
+        "HasRelatives": false,
+        "AllowBookSeatNumber": false,
+        "IsClassAvailableOnline": false,
+        "ClassRatingSummaryInfo": {
+         "TimeTableId": 126,
+         "RatingsCount": 6866,
+         "Rating": 4.935770463151762,
+         "Ranking": 4.9
+        },
+        "BookingPreReservationId": null
+       }
+      ],
+      [],
+      [],
+      [
+       {
+        "Id": 894126,
+        "Status": "Awaitable",
+        "StatusReason": null,
+        "Name": "TBW (Trening Całego Ciała)",
+        "StartTime": "2026-11-16T08:30:00",
+        "Duration": "PT1H-5M",
+        "BookingIndicator": {
+         "Indicator": 0,
+         "Limit": 30,
+         "Available": 0
+        },
+        "Trainer": "Adrian Pierzgalski",
+        "Users": [],
+        "HasRelatives": false,
+        "AllowBookSeatNumber": false,
+        "IsClassAvailableOnline": false,
+        "ClassRatingSummaryInfo": {
+         "TimeTableId": 57,
+         "RatingsCount": 25178,
+         "Rating": 4.930137421558504,
+         "Ranking": 4.9
+        },
+        "BookingPreReservationId": null
+       }
+      ]
+     ]
+    },
+    {
+     "Hour": "1900-01-01T09:00:00",
+     "ClassesPerDay": [
+      [],
+      [
+       {
+        "Id": 965610,
+        "Status": "Bookable",
+        "StatusReason": null,
+        "Name": "ZDROWY KRĘGOSŁUP",
+        "StartTime": "2026-11-12T09:30:00",
+        "Duration": "PT1H-5M",
+        "BookingIndicator": {
+         "Indicator": 2,
+         "Limit": 30,
+         "Available": 10
+        },
+        "Trainer": "Weronika Dampc",
+        "Users": [],
+        "HasRelatives": false,
+        "AllowBookSeatNumber": false,
+        "IsClassAvailableOnline": false,
+        "ClassRatingSummaryInfo": {
+         "TimeTableId": 24,
+         "RatingsCount": 81479,
+         "Rating": 4.923649038402533,
+         "Ranking": 4.9
+        },
+        "BookingPreReservationId": null
+       }
+      ],
+      [
+       {
+        "Id": 893141,
+        "Status": "Bookable",
+        "StatusReason": null,
+        "Name": "BE HEALTHY",
+        "StartTime": "2026-11-13T09:30:00",
+        "Duration": "PT1H-5M",
+        "BookingIndicator": {
+         "Indicator": 2,
+         "Limit": 30,
+         "Available": 10
+        },
+        "Trainer": "Adrian Pierzgalski",
+        "Users": [],
+        "HasRelatives": false,
+        "AllowBookSeatNumber": false,
+        "IsClassAvailableOnline": false,
+        "ClassRatingSummaryInfo": {
+         "TimeTableId": 191,
+         "RatingsCount": 23293,
+         "Rating": 4.9298501695788435,
+         "Ranking": 4.9
+        },
+        "BookingPreReservationId": null
+       }
+      ],
+      [],
+      [],
+      [
+       {
+        "Id": 894127,
+        "Status": "Bookable",
+        "StatusReason": null,
+        "Name": "BE HEALTHY",
+        "StartTime": "2026-11-16T09:30:00",
+        "Duration": "PT1H-5M",
+        "BookingIndicator": {
+         "Indicator": 3,
+         "Limit": 30,
+         "Available": 17
+        },
+        "Trainer": "Adrian Pierzgalski",
+        "Users": [],
+        "HasRelatives": false,
+        "AllowBookSeatNumber": false,
+        "IsClassAvailableOnline": false,
+        "ClassRatingSummaryInfo": {
+         "TimeTableId": 191,
+         "RatingsCount": 23293,
+         "Rating": 4.9298501695788435,
+         "Ranking": 4.9
+        },
+        "BookingPreReservationId": null
+       }
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "PagerData": {
+  "Days": [
+   "2026-11-11",
+   "2026-11-12",
+   "2026-11-13",
+   "2026-11-14",
+   "2026-11-15",
+   "2026-11-16"
+  ],
+  "NextDate": "2026-11-17",
+  "PreviousDate": "2026-11-05",
+  "Date": "2026-11-11",
+  "CanGoForward": true,
+  "CanGoBack": false,
+  "QueryStartDate": "2026-11-11",
+  "QueryEndDate": "2026-11-16"
+ }
+}

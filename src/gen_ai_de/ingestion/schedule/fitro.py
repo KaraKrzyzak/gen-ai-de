@@ -12,18 +12,19 @@ YAML entry example:
     parser: "fitro"
     studio_id: "lekko"        # optional, defaults to the subdomain of the url
 """
+
 from __future__ import annotations
 
 from datetime import date, datetime, timedelta
-from typing import Any, Optional
+from typing import Any
 from urllib.parse import urlparse
 from zoneinfo import ZoneInfo
 
 import pandas as pd
 import requests
 
-from models import ClassEvent, events_to_frame
-from registry import register
+from gen_ai_de.ingestion.schedule.models import ClassEvent, events_to_frame
+from gen_ai_de.ingestion.schedule.registry import register
 
 LOCAL_TZ = ZoneInfo("Europe/Warsaw")
 WEEKS_AHEAD = 2
@@ -37,30 +38,31 @@ def to_local(value: str) -> datetime:
     return datetime.fromisoformat(value.replace("Z", "+00:00")).astimezone(LOCAL_TZ)
 
 
-def parse_payload(payload: dict[str, Any], link: Optional[str] = None) -> list[ClassEvent]:
+def parse_payload(payload: dict[str, Any], link: str | None = None) -> list[ClassEvent]:
     events: list[ClassEvent] = []
     for item in payload.get("content", []):
         if item.get("status") == "cancelled":
             continue
         people = [
-            " ".join(filter(None, [i.get("firstName"), i.get("lastName")]))
-            for i in item.get("instructors") or []
+            " ".join(filter(None, [i.get("firstName"), i.get("lastName")])) for i in item.get("instructors") or []
         ]
         location = item.get("location")
-        events.append(ClassEvent(
-            source="",  # filled in by run.py from the YAML name
-            title=(item.get("className") or "").strip(),
-            start=to_local(item["startDateTime"]),
-            end=to_local(item["endDateTime"]),
-            instructors=[p for p in people if p],
-            spots_total=item.get("capacity"),
-            spots_booked=item.get("occupied"),
-            spots_free=item.get("spotsLeft"),
-            room=location.get("name") if isinstance(location, dict) else location,
-            price=item["priceMinor"] / 100 if item.get("priceMinor") else None,
-            url=link,
-            raw=item,
-        ))
+        events.append(
+            ClassEvent(
+                source="",  # filled in by run.py from the YAML name
+                title=(item.get("className") or "").strip(),
+                start=to_local(item["startDateTime"]),
+                end=to_local(item["endDateTime"]),
+                instructors=[p for p in people if p],
+                spots_total=item.get("capacity"),
+                spots_booked=item.get("occupied"),
+                spots_free=item.get("spotsLeft"),
+                room=location.get("name") if isinstance(location, dict) else location,
+                price=item["priceMinor"] / 100 if item.get("priceMinor") else None,
+                url=link,
+                raw=item,
+            )
+        )
     return events
 
 

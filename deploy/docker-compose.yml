@@ -1,0 +1,15 @@
+# Run from the repository root:
+#   docker compose -f deploy/docker-compose.yml run --rm ingest
+# Later this file gets more services (db: postgres+pgvector, api, bot) for the VM.
+services:
+  ingest:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    env_file:
+      - path: ../.env
+        required: false
+    environment:
+      DATA_DIR: /data
+    volumes:
+      - ../data:/data

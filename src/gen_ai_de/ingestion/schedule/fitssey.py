@@ -12,18 +12,19 @@ YAML entry example:
     studio_id: "czulosfera"
     sample_file: "captures/czulosfera/schedule.json"   # optional, offline testing
 """
+
 from __future__ import annotations
 
 import json
 from datetime import date, datetime, timedelta
 from pathlib import Path
-from typing import Any, Optional
+from typing import Any
 
 import pandas as pd
 import requests
 
-from models import ClassEvent, events_to_frame
-from registry import register
+from gen_ai_de.ingestion.schedule.models import ClassEvent, events_to_frame
+from gen_ai_de.ingestion.schedule.registry import register
 
 SCHEDULE_URL = "https://app.fitssey.com/{studio}/api/v4/private/frontoffice/schedule"
 WEEKS_AHEAD = 2
@@ -39,12 +40,11 @@ def _get(obj: Any, *path: str) -> Any:
     return obj
 
 
-def parse_event(event: dict[str, Any], link: Optional[str]) -> ClassEvent:
+def parse_event(event: dict[str, Any], link: str | None) -> ClassEvent:
     total = event.get("totalCapacity")
     free = event.get("remainCapacity")
     instructors = [
-        name for m in (event.get("members") or [])
-        if (name := _get(m, "user", "fullName") or m.get("qualifiedName"))
+        name for m in (event.get("members") or []) if (name := _get(m, "user", "fullName") or m.get("qualifiedName"))
     ] or [n for n in [_get(event, "member", "user", "fullName")] if n]
     return ClassEvent(
         source="",  # filled in by run.py from the YAML name
@@ -63,7 +63,7 @@ def parse_event(event: dict[str, Any], link: Optional[str]) -> ClassEvent:
     )
 
 
-def parse_payload(payload: dict[str, Any], link: Optional[str] = None) -> pd.DataFrame:
+def parse_payload(payload: dict[str, Any], link: str | None = None) -> pd.DataFrame:
     events = [
         parse_event(e, link)
         for day in payload.get("schedule", [])
@@ -77,8 +77,12 @@ def fetch_payload(studio_id: str, start: date, end: date) -> dict[str, Any]:
     response = requests.post(
         SCHEDULE_URL.format(studio=studio_id),
         json={
-            "category": None, "filters": None, "view": "agendaView", "loadFilters": False,
-            "startDate": start.isoformat(), "endDate": end.isoformat(),
+            "category": None,
+            "filters": None,
+            "view": "agendaView",
+            "loadFilters": False,
+            "startDate": start.isoformat(),
+            "endDate": end.isoformat(),
         },
         headers=HEADERS,
         timeout=REQUEST_TIMEOUT_S,

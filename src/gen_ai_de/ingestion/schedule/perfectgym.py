@@ -13,18 +13,19 @@ YAML entry example:
     parser: "perfectgym"
     club_id: 76            # optional, otherwise taken from the url
 """
+
 from __future__ import annotations
 
 import re
 from datetime import date, datetime, timedelta
-from typing import Any, Optional
+from typing import Any
 from zoneinfo import ZoneInfo
 
 import pandas as pd
 import requests
 
-from models import ClassEvent, events_to_frame
-from registry import register
+from gen_ai_de.ingestion.schedule.models import ClassEvent, events_to_frame
+from gen_ai_de.ingestion.schedule.registry import register
 
 LOCAL_TZ = ZoneInfo("Europe/Warsaw")
 WEEKS_AHEAD = 2
@@ -45,7 +46,7 @@ def base_url(url: str) -> str:
     return url.split("/ClientPortal2", 1)[0] + "/ClientPortal2"
 
 
-def parse_duration_min(value: Optional[str]) -> Optional[int]:
+def parse_duration_min(value: str | None) -> int | None:
     """PerfectGym sends odd values such as 'PT1H-5M' (= 55 min)."""
     match = re.fullmatch(r"PT(?:(-?\d+)H)?(?:(-?\d+)M)?", value or "")
     if not match or not any(match.groups()):
@@ -53,7 +54,7 @@ def parse_duration_min(value: Optional[str]) -> Optional[int]:
     return int(match.group(1) or 0) * 60 + int(match.group(2) or 0)
 
 
-def parse_payload(payload: dict[str, Any], link: Optional[str] = None) -> list[ClassEvent]:
+def parse_payload(payload: dict[str, Any], link: str | None = None) -> list[ClassEvent]:
     events: list[ClassEvent] = []
     for zone in payload.get("CalendarData", []):
         for hour in zone.get("ClassesPerHour", []):
@@ -62,20 +63,22 @@ def parse_payload(payload: dict[str, Any], link: Optional[str] = None) -> list[C
                     start = datetime.fromisoformat(item["StartTime"]).replace(tzinfo=LOCAL_TZ)
                     minutes = parse_duration_min(item.get("Duration"))
                     booking = item.get("BookingIndicator") or {}
-                    events.append(ClassEvent(
-                        source="",  # filled in by run.py from the YAML name
-                        title=(item.get("Name") or "").strip(),
-                        start=start,
-                        end=start + timedelta(minutes=minutes) if minutes else None,
-                        duration_min=minutes,
-                        instructors=[item["Trainer"]] if item.get("Trainer") else [],
-                        spots_total=booking.get("Limit"),
-                        spots_free=booking.get("Available"),
-                        room=zone.get("ZoneName"),
-                        category=item.get("Status"),  # Bookable / FullBooked / Awaitable
-                        url=link,
-                        raw=item,
-                    ))
+                    events.append(
+                        ClassEvent(
+                            source="",  # filled in by run.py from the YAML name
+                            title=(item.get("Name") or "").strip(),
+                            start=start,
+                            end=start + timedelta(minutes=minutes) if minutes else None,
+                            duration_min=minutes,
+                            instructors=[item["Trainer"]] if item.get("Trainer") else [],
+                            spots_total=booking.get("Limit"),
+                            spots_free=booking.get("Available"),
+                            room=zone.get("ZoneName"),
+                            category=item.get("Status"),  # Bookable / FullBooked / Awaitable
+                            url=link,
+                            raw=item,
+                        )
+                    )
     return events
 
 
@@ -83,8 +86,12 @@ def fetch_page(base: str, club_id: int, start: date) -> dict[str, Any]:
     response = requests.post(
         f"{base}/Classes/ClassCalendar/WeeklyClasses",
         json={
-            "clubId": club_id, "categoryId": None, "timeTableId": None,
-            "trainerId": None, "daysInWeek": 6, "date": start.isoformat(),
+            "clubId": club_id,
+            "categoryId": None,
+            "timeTableId": None,
+            "trainerId": None,
+            "daysInWeek": 6,
+            "date": start.isoformat(),
         },
         headers=HEADERS,
         timeout=REQUEST_TIMEOUT_S,

@@ -10,19 +10,19 @@ YAML entry example:
     url: "https://energyclub-gdynia2.cms.efitness.com.pl/kalendarz-zajec"
     parser: "efitness"
 """
+
 from __future__ import annotations
 
 import re
 from datetime import date, datetime, timedelta
-from typing import Optional
 from zoneinfo import ZoneInfo
 
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 
-from models import ClassEvent, events_to_frame
-from registry import register
+from gen_ai_de.ingestion.schedule.models import ClassEvent, events_to_frame
+from gen_ai_de.ingestion.schedule.registry import register
 
 LOCAL_TZ = ZoneInfo("Europe/Warsaw")
 WEEKS_AHEAD = 2
@@ -30,12 +30,12 @@ REQUEST_TIMEOUT_S = 20
 HEADERS = {"User-Agent": "Mozilla/5.0 (schedule-scraper; personal project)"}
 
 
-def text_of(node, selector: str) -> Optional[str]:
+def text_of(node, selector: str) -> str | None:
     found = node.select_one(selector)
     return found.get_text(" ", strip=True) if found else None
 
 
-def parse_html(html: bytes | str, link: Optional[str] = None) -> list[ClassEvent]:
+def parse_html(html: bytes | str, link: str | None = None) -> list[ClassEvent]:
     soup = BeautifulSoup(html, "html.parser")
     table = soup.select_one("table.calendar_table")
     if table is None:
@@ -61,16 +61,18 @@ def parse_html(html: bytes | str, link: Optional[str] = None) -> list[ClassEvent
                 length = re.search(r"\d+", text_of(div, "span.eventlength") or "")
                 free = text_of(div, "span.availability-number")
                 start = datetime(days[index].year, days[index].month, days[index].day, hour, minute, tzinfo=LOCAL_TZ)
-                events.append(ClassEvent(
-                    source="",  # filled in by run.py from the YAML name
-                    title=text_of(div, "p.event_name") or "",
-                    start=start,
-                    end=start + timedelta(minutes=int(length.group())) if length else None,
-                    instructors=[i] if (i := text_of(div, "p.instructor")) else [],
-                    spots_free=max(int(free), 0) if free and re.fullmatch(r"-?\d+", free) else None,
-                    room=room or None,
-                    url=link,
-                ))
+                events.append(
+                    ClassEvent(
+                        source="",  # filled in by run.py from the YAML name
+                        title=text_of(div, "p.event_name") or "",
+                        start=start,
+                        end=start + timedelta(minutes=int(length.group())) if length else None,
+                        instructors=[i] if (i := text_of(div, "p.instructor")) else [],
+                        spots_free=max(int(free), 0) if free and re.fullmatch(r"-?\d+", free) else None,
+                        room=room or None,
+                        url=link,
+                    )
+                )
     return events
 
 

@@ -1,0 +1,728 @@
+{
+ "schedule": [
+  {
+   "date": "2026-11-09",
+   "scheduleEvents": [
+    {
+     "referenceId": "e9f3e3296881ea1f027730c14cad8eb1c4dd291dc530a98d506875d580ad6c43",
+     "totalCapacity": 9,
+     "onlineCapacity": 9,
+     "waitingListCapacity": 3,
+     "nonVaccinatedCapacity": null,
+     "color": "rgb(213, 0, 0)",
+     "liveStreamUrl": null,
+     "liveStreamPassword": null,
+     "liveStreamPasswordRevealed": null,
+     "privateNotes": null,
+     "isFree": false,
+     "isLiveStream": false,
+     "isCancelled": false,
+     "isHidden": false,
+     "isBookableOnline": true,
+     "startsAt": "2026-11-09T09:00:00+01:00",
+     "endsAt": "2026-11-09T09:55:00+01:00",
+     "member": {
+      "nickname": null,
+      "publicBiography": null,
+      "user": {
+       "fullName": "Natalia Wojdak-Gryszun",
+       "guid": "36DE9CFC-97A1-4669-87C4-AADEF2C12731"
+      },
+      "picture": null,
+      "qualifiedName": "Natalia Wojdak-Gryszun"
+     },
+     "room": {
+      "name": "Domyślna",
+      "isDefault": true,
+      "location": {
+       "name": "Czułosfera"
+      },
+      "qualifiedName": "Czułosfera",
+      "hasSmartLock": false,
+      "guid": "ED81257D-C4EB-4EC9-9E3F-478E53BA8565"
+     },
+     "scheduleMeta": {
+      "bookingBehavior": 0,
+      "isBookableOnline": true,
+      "classService": {
+       "name": "ABT (brzuch&pośladki&uda) 🔥",
+       "description": null,
+       "picture": {
+        "path": "/106BBD58-B47A-488A-B749-BAFB92D3D1AF/01dedc5fbede7bacb549c08532e433685cf3e78a.original.jpeg",
+        "absoluteUrl": "https://fitssey-prod-cdn.storage.googleapis.com/uploads/106BBD58-B47A-488A-B749-BAFB92D3D1AF/01dedc5fbede7bacb549c08532e433685cf3e78a.medium.jpeg",
+        "guid": "081FD5F4-5B55-4FE6-B928-50300A267A61"
+       },
+       "experienceLevel": {
+        "name": {
+         "en_EN": {
+          "value": "All levels"
+         },
+         "pl_PL": {
+          "value": "Wszystkie poziomy"
+         },
+         "xx_XX": {
+          "value": "All levels"
+         },
+         "es_ES": {
+          "value": "All levels"
+         },
+         "uk_UA": {
+          "value": "All levels"
+         }
+        },
+        "numericLevel": 0,
+        "guid": "07235C5C-C809-4CFF-9389-5E85E991D9D6"
+       },
+       "excerpt": "💪 ABT &ndash; brzuch&amp;pośladki&amp;uda siła &ndash; energia &ndash; wyrzeźbione ciało To intensywny trening wzmacniający, skoncentrowany na kluczowych partiach ciała &ndash; udach, brzuchu i pośladkach. Regularne zajęcia pomagają wzmocnić mięśnie, poprawić jędrność i kształt sylwetki, a także zwiększyć wytrzymałość i spalić nadmiar kalorii. 🔥 Na czym polegają zajęcia? Trening ABT łączy elementy cardio i ćwiczeń siłowych z wykorzystaniem masy własnego ciała oraz akcesori&oacute;w (gum, ciężark&oacute;w, step&oacute;w). Każda sesja to dynamiczna praca w rytm muzyki, kt&oacute;ra motywuje do działania i pozwala ćwiczyć z przyjemnością. 💫 Efekty, kt&oacute;re poczujesz: wysmuklenie i ujędrnienie ud, brzucha i pośladk&oacute;w, wzmocnienie mięśni głębokich i stabilizacja kręgosłupa, poprawa kondycji i sprawności całego ciała, wsparcie procesu spalania tkanki tłuszczowej, lepsze samopoczucie i przypływ pozytywnej energii. 🌿 Dla kogo? dla kobiet i mężczyzn na każdym poziomie zaawansowania, dla os&oacute;b, kt&oacute;re chcą wzmocnić dolne partie ciała i wyrzeźbić sylwetkę, dla tych, kt&oacute;rzy lubią energiczny ruch i trening w grupie. 👟 Jak się przygotować? zał&oacute;ż wygodny str&oacute;j sportowy i buty na czystej podeszwie, zabierz wodę, ręcznik i uśmiech &ndash; resztą zajmiemy się my! 😄 ℹ️ Organizacja: na zajęcia przychodzimy do 10 minut przed rozpoczęciem, szatnia znajduje się na poziomie -1, rzeczy osobiste zostawiamy w szafkach, cisza w poczekalni &ndash; obok mogą odbywać się zajęcia relaksacyjne, jeśli zajęcia są przed 9:00 lub po 20:00 &ndash; wchodzimy tylnym wejściem (z lewej strony budynku).",
+       "serviceType": "classroom",
+       "guid": "66830D80-6ED5-4F14-9FCC-841343286255"
+      },
+      "guid": "F2DF116F-8A1C-4BCA-A4FE-537C396EF0E5"
+     },
+     "startTime": "09:00",
+     "endTime": "09:55",
+     "hasStarted": true,
+     "hasEnded": true,
+     "isInProgress": false,
+     "remainCapacity": 6,
+     "remainOnlineCapacity": 7,
+     "remainFrontOfficeCapacity": 6,
+     "remainWaitingListCapacity": 3,
+     "remainCapacityForMale": 0,
+     "remainCapacityForFemale": 0,
+     "bookedSpots": 3,
+     "bookedSpotsForMale": null,
+     "bookedSpotsForFemale": null,
+     "bookedWaitingListSpots": 0,
+     "bookedOnlineSpots": 2,
+     "maleCapacity": null,
+     "femaleCapacity": null,
+     "day": 1,
+     "isLiveStreamBroadcasting": false,
+     "isLiveStreamPasswordProtected": false,
+     "clientVisit": null,
+     "isAvailableForBookingAhead": true,
+     "isAvailableBeforeStartTime": false,
+     "qualifiedName": "ABT (brzuch&pośladki&uda) 🔥",
+     "serviceType": "TYPE_CLASSROOM_SERVICE",
+     "members": [
+      {
+       "nickname": null,
+       "publicBiography": null,
+       "user": {
+        "fullName": "Natalia Wojdak-Gryszun",
+        "guid": "36DE9CFC-97A1-4669-87C4-AADEF2C12731"
+       },
+       "picture": null,
+       "qualifiedName": "Natalia Wojdak-Gryszun"
+      }
+     ]
+    },
+    {
+     "referenceId": "6fde8a7121f825bfaea2baea1cf54c2912c4aeb5a51ca01f7fb642fa5383b45e",
+     "totalCapacity": 8,
+     "onlineCapacity": 8,
+     "waitingListCapacity": 0,
+     "nonVaccinatedCapacity": null,
+     "color": "rgb(0, 0, 0)",
+     "liveStreamUrl": null,
+     "liveStreamPassword": null,
+     "liveStreamPasswordRevealed": null,
+     "privateNotes": null,
+     "isFree": false,
+     "isLiveStream": false,
+     "isCancelled": false,
+     "isHidden": false,
+     "isBookableOnline": true,
+     "startsAt": "2026-11-09T15:50:00+01:00",
+     "endsAt": "2026-11-09T16:45:00+01:00",
+     "member": {
+      "nickname": null,
+      "publicBiography": null,
+      "user": {
+       "fullName": "Katarzyna Donner",
+       "guid": "84AEF062-41F2-486F-B445-3BD347D8071E"
+      },
+      "picture": null,
+      "qualifiedName": "Katarzyna Donner"
+     },
+     "room": {
+      "name": "Domyślna",
+      "isDefault": true,
+      "location": {
+       "name": "Czułosfera"
+      },
+      "qualifiedName": "Czułosfera",
+      "hasSmartLock": false,
+      "guid": "ED81257D-C4EB-4EC9-9E3F-478E53BA8565"
+     },
+     "scheduleMeta": {
+      "bookingBehavior": 1,
+      "isBookableOnline": true,
+      "classService": {
+       "name": "Taniec w powietrzu (8-11 lat)",
+       "description": null,
+       "picture": {
+        "path": "/106BBD58-B47A-488A-B749-BAFB92D3D1AF/7b7743385c155ef4e33adabe29e9410255d62828.original.jpeg",
+        "absoluteUrl": "https://fitssey-prod-cdn.storage.googleapis.com/uploads/106BBD58-B47A-488A-B749-BAFB92D3D1AF/7b7743385c155ef4e33adabe29e9410255d62828.medium.jpeg",
+        "guid": "283C95E9-A09F-44A9-B11F-B198887621A0"
+       },
+       "experienceLevel": {
+        "name": {
+         "en_EN": {
+          "value": "Advanced"
+         },
+         "pl_PL": {
+          "value": "Zaawansowany"
+         },
+         "xx_XX": {
+          "value": "Advanced"
+         },
+         "es_ES": {
+          "value": "Advanced"
+         },
+         "uk_UA": {
+          "value": "Advanced"
+         }
+        },
+        "numericLevel": 5,
+        "guid": "C92645A1-2F88-4C7F-A08F-40BF4DD8E615"
+       },
+       "excerpt": "💃 Taniec w Powietrzu &ndash; grupa zaawansowana (8&ndash;11 lat) Ruch - Taniec - Akrobatyka - Ekspresja Zajęcia dla dzieci, kt&oacute;re mają już doświadczenie z tańcem w powietrzu i chcą rozwijać swoje umiejętności, poznawać bardziej wymagające figury i sekwencje oraz odkrywać nowe możliwości ruchu w powietrzu. To połączenie tańca, gimnastyki i element&oacute;w akrobatyki wykonywanych na sprzętach aerial. Pracujemy z hamakami, a w trakcie zajęć będziemy stopniowo wprowadzać r&oacute;wnież techniki i elementy na szarfach oraz kołach cyrkowych. Rozwijamy siłę, gibkość, koordynację i świadomość ciała, a jednocześnie kreatywność i odwagę w ruchu. ✨ Co dzieje się na zajęciach? &ndash; doskonalimy poznane figury i techniki na hamakach, &ndash; uczymy się bardziej złożonych element&oacute;w i sekwencji w powietrzu, &ndash; stopniowo poznajemy techniki pracy na szarfach i kołach cyrkowych, &ndash; rozwijamy siłę, gibkość, koordynację i świadomość ciała, &ndash; pracujemy nad płynnością i jakością ruchu, &ndash; tworzymy własne kombinacje i kr&oacute;tkie choreografie, &ndash; rozwijamy kreatywność, ekspresję i pewność siebie. 🧡 Dlaczego warto? ✔️ rozwijamy sprawność i wszechstronne umiejętności ruchowe, ✔️ wzmacniamy ciało i poprawiamy elastyczność, ✔️ poznajemy r&oacute;żne techniki i sprzęty aerial, ✔️ uczymy koncentracji, samodzielności i odpowiedzialności za własne ciało, ✔️ budujemy odwagę i pewność siebie, ✔️ dajemy przestrzeń do tw&oacute;rczego wyrażania siebie poprzez ruch. 👧👦 Dla kogo? Dla dzieci w wieku 8&ndash;11 lat, kt&oacute;re mają już doświadczenie w tańcu w powietrzu. Zajęcia przeznaczone są dla uczestnik&oacute;w znających podstawowe figury i zasady bezpiecznej pracy na hamaku. 📌 Organizacja: 🟠 Liczba miejsc ograniczona &ndash; obowiązują zapisy. 🟠 Zapisując dziecko na zajęcia, rodzic/opiekun potwierdza zapoznanie się z regulaminem, dostępnym na stronie www.czulosfera.pl. Prowadząca Katarzyna Doner &ndash; tancerka, performerka i reżyserka, związana z ruchem i teatrem od kilkunastu lat. Absolwentka PWST we Wrocławiu (wydział lalkarski) oraz uczestniczka licznych kurs&oacute;w z zakresu tańca, ruchu i choreografii, m.in. Deltebre Dansa, Kursu Choreografii Eksperymentalnej i Tao of Movement. Obecnie studentka 4-letniego szkolenia Psychoterapii Tańcem i Ruchem w Instytucie DMT w Warszawie. Założycielka pierwszej we Wrocławiu szkoły tańca w powietrzu FRU Aerial Dance, wsp&oacute;łtw&oacute;rczyni środowiska nowego cyrku w Polsce (m.in. Cirkus Klan Grus, Kejos Theater). Od lat pracuje z dziećmi, młodzieżą i osobami dorosłymi, prowadząc warsztaty i zajęcia oparte na ruchu, ekspresji i świadomości ciała. Laureatka Nagrody Orkana i wyr&oacute;żnienia Instytutu Teatralnego za działalność artystyczną i badawczą. ℹ️ Informacje organizacyjne: 🔸 Dzieci przygotowują się do zajęć w poczekalni. 🔸 Nie schodzimy na poziom -1, gdzie odbywają się zabiegi &ndash; jeśli jest taka konieczność, prosimy o zachowanie ciszy. 🔸 Buty zdejmujemy i odkładamy do szafek. 🔸 Do sali wchodzimy bez instruktora dopiero po jego zaproszeniu. 🔸 W poczekalni zachowujemy ciszę i wsp&oacute;lny porządek &ndash; rzeczy zostawiamy na szafkach lub w wyznaczonych miejscach. 📍 Czułosfera &ndash; Gdańsk Osowa",
+       "serviceType": "course",
+       "guid": "9C15E00E-8101-491F-BBF6-D39378374B1A"
+      },
+      "guid": "49E1C5C0-DECA-4EDE-A305-6970039A5100"
+     },
+     "startTime": "15:50",
+     "endTime": "16:45",
+     "hasStarted": true,
+     "hasEnded": true,
+     "isInProgress": false,
+     "remainCapacity": 6,
+     "remainOnlineCapacity": 8,
+     "remainFrontOfficeCapacity": 6,
+     "remainWaitingListCapacity": 0,
+     "remainCapacityForMale": 0,
+     "remainCapacityForFemale": 0,
+     "bookedSpots": 2,
+     "bookedSpotsForMale": null,
+     "bookedSpotsForFemale": null,
+     "bookedWaitingListSpots": 0,
+     "bookedOnlineSpots": 0,
+     "maleCapacity": null,
+     "femaleCapacity": null,
+     "day": 1,
+     "isLiveStreamBroadcasting": false,
+     "isLiveStreamPasswordProtected": false,
+     "clientVisit": null,
+     "isAvailableForBookingAhead": true,
+     "isAvailableBeforeStartTime": false,
+     "qualifiedName": "Taniec w powietrzu (8-11 lat)",
+     "serviceType": "TYPE_COURSE_SERVICE",
+     "members": [
+      {
+       "nickname": null,
+       "publicBiography": null,
+       "user": {
+        "fullName": "Katarzyna Donner",
+        "guid": "84AEF062-41F2-486F-B445-3BD347D8071E"
+       },
+       "picture": null,
+       "qualifiedName": "Katarzyna Donner"
+      }
+     ]
+    },
+    {
+     "referenceId": "bdee5896810b84231e38dec351fcc79c2bb2d32b233664026ac569f75238d50a",
+     "totalCapacity": 8,
+     "onlineCapacity": 8,
+     "waitingListCapacity": 0,
+     "nonVaccinatedCapacity": null,
+     "color": "rgb(0, 0, 0)",
+     "liveStreamUrl": null,
+     "liveStreamPassword": null,
+     "liveStreamPasswordRevealed": null,
+     "privateNotes": null,
+     "isFree": false,
+     "isLiveStream": false,
+     "isCancelled": false,
+     "isHidden": false,
+     "isBookableOnline": true,
+     "startsAt": "2026-11-09T16:50:00+01:00",
+     "endsAt": "2026-11-09T17:45:00+01:00",
+     "member": {
+      "nickname": null,
+      "publicBiography": null,
+      "user": {
+       "fullName": "Katarzyna Donner",
+       "guid": "84AEF062-41F2-486F-B445-3BD347D8071E"
+      },
+      "picture": null,
+      "qualifiedName": "Katarzyna Donner"
+     },
+     "room": {
+      "name": "Domyślna",
+      "isDefault": true,
+      "location": {
+       "name": "Czułosfera"
+      },
+      "qualifiedName": "Czułosfera",
+      "hasSmartLock": false,
+      "guid": "ED81257D-C4EB-4EC9-9E3F-478E53BA8565"
+     },
+     "scheduleMeta": {
+      "bookingBehavior": 1,
+      "isBookableOnline": true,
+      "classService": {
+       "name": "Taniec w powietrzu dla dzieci (8-11lat)",
+       "description": null,
+       "picture": {
+        "path": "/106BBD58-B47A-488A-B749-BAFB92D3D1AF/3b859d44a7b520609c79671032f7d46f127670aa.original.jpeg",
+        "absoluteUrl": "https://fitssey-prod-cdn.storage.googleapis.com/uploads/106BBD58-B47A-488A-B749-BAFB92D3D1AF/3b859d44a7b520609c79671032f7d46f127670aa.medium.jpeg",
+        "guid": "79F932AA-42E9-4EA6-A6DF-41B21939C53A"
+       },
+       "experienceLevel": {
+        "name": {
+         "en_EN": {
+          "value": "Intermediate"
+         },
+         "pl_PL": {
+          "value": "Średni"
+         },
+         "xx_XX": {
+          "value": "Intermediate"
+         },
+         "es_ES": {
+          "value": "Intermediate"
+         },
+         "uk_UA": {
+          "value": "Intermediate"
+         }
+        },
+        "numericLevel": 3,
+        "guid": "112CA9EE-91D0-4687-AF22-281F11118F99"
+       },
+       "excerpt": "💃 Taniec w Powietrzu (8-11 lat) Zabawa &ndash; Ruch &ndash; Gibkość &ndash; Odwaga Zajęcia tańca w powietrzu to połączenie tańca, gimnastyki i element&oacute;w akrobatyki wykonywanych na specjalnych hamakach. To przestrzeń, w kt&oacute;rej dzieci rozwijają siłę, elastyczność i koordynację&hellip; a przy tym świetnie się bawią! ✨ Co dzieje się na zajęciach? &ndash; poznajemy podstawowe figury i sekwencje w powietrzu, &ndash; bawimy się ruchem, rozwijając kreatywność i wyobraźnię, &ndash; wzmacniamy ciało i poprawiamy gibkość, &ndash; uczymy się odwagi i wiary w swoje możliwości. 🧡 Dlaczego warto? ✔️ wspierają og&oacute;lny rozw&oacute;j ruchowy i emocjonalny, ✔️ budują pewność siebie i samodzielność, ✔️ uczą wsp&oacute;łpracy i integracji z r&oacute;wieśnikami, ✔️ dają ogromną radość z każdego małego sukcesu. 👧👦 Dla kogo? Dla dzieci w wieku 5&ndash;7 lat &ndash; grupa otwarta, poziom dopasowany do wieku i możliwości uczestnik&oacute;w. 📌 Organizacja: 🟠 Zajęcia odbywają się w formule zamkniętej &ndash; semestralnej. 🟠 Liczba miejsc ograniczona &ndash; obowiązują zapisy. 🟠 Obowiązuje miesięczny okres wypowiedzenia. 🟠 Zapisując dziecko na zajęcia, rodzic/opiekun potwierdza zapoznanie się z regulaminem, dostępnym na stronie www.czulosfera.pl. Prowdząca: Katarzyna Doner - tancerka, performerka i reżyserka, związana z ruchem i teatrem od kilkunastu lat. Absolwentka PWST we Wrocławiu (wydział lalkarski) oraz uczestniczka licznych kurs&oacute;w z zakresu tańca, ruchu i choreografii (m.in. Deltebre Dansa, Kurs Choreografii Eksperymentalnej, Tao of Movement). Obecnie studentka 4-letniego szkolenia Psychoterapii Tańcem i Ruchem w Instytucie DMT w Warszawie. Założycielka pierwszej we Wrocławiu szkoły tańca w powietrzu FRU Aerial Dance, wsp&oacute;łtw&oacute;rczyni środowiska nowego cyrku w Polsce (m.in. Cirkus Klan Grus, Kejos Theater). Od lat pracuje z dziećmi, młodzieżą i osobami dorosłymi, prowadząc warsztaty i zajęcia oparte na ruchu, ekspresji i świadomości ciała. Laureatka Nagrody Orkana i wyr&oacute;żnienia Instytutu Teatralnego za działalność artystyczną i badawczą. ℹ️ Informacje organizacyjne: 🔸 Dzieci przygotowują się do zajęć w poczekalni. 🔸 Nie schodzimy na poziom -1, gdzie odbywają się zabiegi &ndash; jeśli jest taka konieczność, prosimy o zachowanie ciszy. 🔸 Buty zdejmujemy i odkładamy do szafek. 🔸 Do sali wchodzimy bez instruktora dopiero po jego zaproszeniu. 🔸 W poczekalni zachowujemy ciszę i wsp&oacute;lny porządek &ndash; rzeczy zostawiamy na szafkach lub w wyznaczonych miejscach. 📍 Czułosfera &ndash; Gdańsk Osowa 📞 Zapisy i informacje: +48 534 896 468",
+       "serviceType": "course",
+       "guid": "FE7A4B79-C609-492D-9099-F6694BA23038"
+      },
+      "guid": "49C6E9F2-F926-4FAC-B5EF-56860EB072D5"
+     },
+     "startTime": "16:50",
+     "endTime": "17:45",
+     "hasStarted": true,
+     "hasEnded": true,
+     "isInProgress": false,
+     "remainCapacity": 3,
+     "remainOnlineCapacity": 8,
+     "remainFrontOfficeCapacity": 3,
+     "remainWaitingListCapacity": 0,
+     "remainCapacityForMale": 0,
+     "remainCapacityForFemale": 0,
+     "bookedSpots": 5,
+     "bookedSpotsForMale": null,
+     "bookedSpotsForFemale": null,
+     "bookedWaitingListSpots": 0,
+     "bookedOnlineSpots": 0,
+     "maleCapacity": null,
+     "femaleCapacity": null,
+     "day": 1,
+     "isLiveStreamBroadcasting": false,
+     "isLiveStreamPasswordProtected": false,
+     "clientVisit": null,
+     "isAvailableForBookingAhead": true,
+     "isAvailableBeforeStartTime": false,
+     "qualifiedName": "Taniec w powietrzu dla dzieci (8-11lat)",
+     "serviceType": "TYPE_COURSE_SERVICE",
+     "members": [
+      {
+       "nickname": null,
+       "publicBiography": null,
+       "user": {
+        "fullName": "Katarzyna Donner",
+        "guid": "84AEF062-41F2-486F-B445-3BD347D8071E"
+       },
+       "picture": null,
+       "qualifiedName": "Katarzyna Donner"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2026-11-10",
+   "scheduleEvents": [
+    {
+     "referenceId": "99d8efb6601f14131d94e535d1ad4eaa15d09ba65c105fecb3ded08a6b86018e",
+     "totalCapacity": 3,
+     "onlineCapacity": 3,
+     "waitingListCapacity": 2,
+     "nonVaccinatedCapacity": null,
+     "color": "rgb(17, 123, 15)",
+     "liveStreamUrl": null,
+     "liveStreamPassword": null,
+     "liveStreamPasswordRevealed": null,
+     "privateNotes": null,
+     "isFree": false,
+     "isLiveStream": false,
+     "isCancelled": true,
+     "isHidden": false,
+     "isBookableOnline": true,
+     "startsAt": "2026-11-10T08:00:00+01:00",
+     "endsAt": "2026-11-10T08:55:00+01:00",
+     "member": {
+      "nickname": null,
+      "publicBiography": "<p><strong>Ania</strong> prowadzi zajęcia pilatesu z myślą o tym, żeby realnie wspierać codzienną sprawność i komfort ciała swoich uczestników.</p><p>Wywodzi się z branży spa &amp; wellness, dlatego od początku bliski jest jej temat dobrostanu i świadomej pracy z ciałem. Swoją pilatesową drogę rozpoczęła od Clinical Pilates, a następnie rozwijała się w obszarze biomechaniki ruchu oraz pracy z kobietami w ciąży i po ciąży.</p><p>Na zajęciach szczególną uwagę zwraca na pracę różnych części ciała – ich równowagę, stabilizację i współpracę. Uwielbia też dodawać elementy siłowe i pozycje, które wymagają więcej zaangażowania – takie „smaczki”, które budują realną siłę i kontrolę ciała. Stawia na uważność i precyzję, tak aby efekty było czuć nie tylko na macie, ale też w codziennym funkcjonowaniu.</p>",
+      "user": {
+       "fullName": "Ania Walkiewicz",
+       "guid": "148CD491-0A67-439A-A2B4-DEC7D3E7285A"
+      },
+      "picture": {
+       "path": "/106BBD58-B47A-488A-B749-BAFB92D3D1AF/36f7637a8b243f94285d679aaef161ad515262e2.original.jpeg",
+       "absoluteUrl": "https://fitssey-prod-cdn.storage.googleapis.com/uploads/106BBD58-B47A-488A-B749-BAFB92D3D1AF/36f7637a8b243f94285d679aaef161ad515262e2.medium.jpeg",
+       "guid": "6943E4A9-B73A-471D-B475-7D2462E8FBAF"
+      },
+      "qualifiedName": "Ania Walkiewicz"
+     },
+     "room": {
+      "name": "Domyślna",
+      "isDefault": true,
+      "location": {
+       "name": "Czułosfera"
+      },
+      "qualifiedName": "Czułosfera",
+      "hasSmartLock": false,
+      "guid": "ED81257D-C4EB-4EC9-9E3F-478E53BA8565"
+     },
+     "scheduleMeta": {
+      "bookingBehavior": 0,
+      "isBookableOnline": true,
+      "classService": {
+       "name": "Reformer/Wieża TRIO Poziom 1 🌊",
+       "description": null,
+       "picture": {
+        "path": "/106BBD58-B47A-488A-B749-BAFB92D3D1AF/b2d4bcca1120600a1b863c1f942cf5ac2272b66d.original.jpeg",
+        "absoluteUrl": "https://fitssey-prod-cdn.storage.googleapis.com/uploads/106BBD58-B47A-488A-B749-BAFB92D3D1AF/b2d4bcca1120600a1b863c1f942cf5ac2272b66d.medium.jpeg",
+        "guid": "133DA2EC-8123-4834-9642-2517B2972B15"
+       },
+       "experienceLevel": {
+        "name": {
+         "en_EN": {
+          "value": "All levels"
+         },
+         "pl_PL": {
+          "value": "Wszystkie poziomy"
+         },
+         "xx_XX": {
+          "value": "All levels"
+         },
+         "es_ES": {
+          "value": "All levels"
+         },
+         "uk_UA": {
+          "value": "All levels"
+         }
+        },
+        "numericLevel": 0,
+        "guid": "07235C5C-C809-4CFF-9389-5E85E991D9D6"
+       },
+       "excerpt": "🌊 Poziom 1 &ndash; Precyzja i Płynność kontrola &ndash; świadomość &ndash; harmonia 👉 rozwijasz technikę 👉 uczysz się płynnych przejść i pracy w ruchu 👉 ciało zaczyna &bdquo;rozumieć&rdquo; pilates To zajęcia odpowiednie zar&oacute;wno dla os&oacute;b, kt&oacute;re dopiero zaczynają swoją przygodę z reformerem, jak i dla tych, kt&oacute;re mają już pierwsze doświadczenia (np. po poziomie Intro) i chcą doskonalić technikę oraz zwiększyć kontrolę nad ciałem. Skupiamy się na stabilizacji w ruchu, świadomym oddechu i precyzyjnych przejściach między pozycjami &ndash; tak, by ciało pracowało lekko, ale efektywnie. Podczas zajęć wykorzystujemy pełne możliwości reformera &ndash; pracujemy w pozycjach leżących, siedzących, klęczących i stojących, angażując całe ciało. To poziom, na kt&oacute;rym zaczynasz łączyć siłę z elastycznością, technikę z płynnością, a ruch staje się bardziej naturalny i świadomy. Zajęcia odbywają się w kameralnych, maksymalnie 3-osobowych grupach, co gwarantuje indywidualne podejście i precyzyjne korekty. Instruktorka na bieżąco koryguje ustawienia, udziela wskaz&oacute;wek i dba o prawidłowe wykonanie ruchu, dopasowując tempo i poziom trudności do grupy. Podczas zajęć instruktorka decyduje, czy pracujemy na reformerach, czy na wieży, w zależności od celu sesji i potrzeb uczestnik&oacute;w. To połączenie zapewnia r&oacute;wnowagę między siłą, stabilizacją i rozciągnięciem, rozwijając świadomość ciała i harmonię ruchu. &nbsp; 🌟 Co dają zajęcia na poziomie 1? ✅ zwiększają siłę i wytrzymałość mięśni, ✅ poprawiają koordynację, r&oacute;wnowagę i płynność ruchu, ✅ rozwijają precyzję i świadomość ciała, ✅ wspierają stabilność kręgosłupa i miednicy, ✅ uczą uważności, kontroli i lekkości w ruchu. &nbsp; 🧘&zwj;♀️ Dla kogo? dla os&oacute;b początkujących &ndash; r&oacute;wnież bez doświadczenia, dla os&oacute;b po poziomie Intro, kt&oacute;re chcą rozwijać technikę, dla wszystkich, kt&oacute;rzy chcą wzmocnić ciało i poprawić jakość ruchu. &nbsp; 👚 Jak się przygotować? zał&oacute;ż wygodny, dopasowany str&oacute;j sportowy, zabierz czyste skarpetki (najlepiej antypoślizgowe), zdejmij biżuterię &ndash; dla bezpieczeństwa i ochrony sprzętu, warto mieć przy sobie wodę. &nbsp; ⏱️ Czas trwania: około 55 minut &ndash; trening łączący świadomość, kontrolę i płynność w ruchu. &nbsp; ℹ️ Informacje organizacyjne: na zajęcia przychodzimy do 10 minut przed rozpoczęciem, jeśli jesteś u nas po raz pierwszy, zgłoś się do recepcji &ndash; z przyjemnością oprowadzimy Cię po przestrzeni, szatnia znajduje się na poziomie &ndash;1, w poczekalni zdejmujemy buty i odkładamy je do szafek, rzeczy osobiste zostawiamy w szafkach lub na wieszakach, prosimy o ciszę w poczekalni &ndash; obok mogą odbywać się zajęcia relaksacyjne, jeśli zajęcia odbywają się przed 9:00 lub po 19:00 (poza godzinami otwarcia kawiarni) &ndash; wchodzimy i wychodzimy tylnym wejściem (z lewej strony budynku). &nbsp; 🧡 Dziękujemy za uważność i do zobaczenia na reformerze!",
+       "serviceType": "classroom",
+       "guid": "3C2DCA08-AC60-428F-BB4D-D498EE1CBBB5"
+      },
+      "guid": "4B094C15-1B3F-4F02-8335-BD9776C27F39"
+     },
+     "startTime": "08:00",
+     "endTime": "08:55",
+     "hasStarted": true,
+     "hasEnded": true,
+     "isInProgress": false,
+     "remainCapacity": 3,
+     "remainOnlineCapacity": 3,
+     "remainFrontOfficeCapacity": 3,
+     "remainWaitingListCapacity": 2,
+     "remainCapacityForMale": 0,
+     "remainCapacityForFemale": 0,
+     "bookedSpots": 0,
+     "bookedSpotsForMale": null,
+     "bookedSpotsForFemale": null,
+     "bookedWaitingListSpots": 0,
+     "bookedOnlineSpots": 0,
+     "maleCapacity": null,
+     "femaleCapacity": null,
+     "day": 2,
+     "isLiveStreamBroadcasting": false,
+     "isLiveStreamPasswordProtected": false,
+     "clientVisit": null,
+     "isAvailableForBookingAhead": true,
+     "isAvailableBeforeStartTime": false,
+     "qualifiedName": "Reformer/Wieża TRIO Poziom 1 🌊",
+     "serviceType": "TYPE_CLASSROOM_SERVICE",
+     "members": [
+      {
+       "nickname": null,
+       "publicBiography": "<p><strong>Ania</strong> prowadzi zajęcia pilatesu z myślą o tym, żeby realnie wspierać codzienną sprawność i komfort ciała swoich uczestników.</p><p>Wywodzi się z branży spa &amp; wellness, dlatego od początku bliski jest jej temat dobrostanu i świadomej pracy z ciałem. Swoją pilatesową drogę rozpoczęła od Clinical Pilates, a następnie rozwijała się w obszarze biomechaniki ruchu oraz pracy z kobietami w ciąży i po ciąży.</p><p>Na zajęciach szczególną uwagę zwraca na pracę różnych części ciała – ich równowagę, stabilizację i współpracę. Uwielbia też dodawać elementy siłowe i pozycje, które wymagają więcej zaangażowania – takie „smaczki”, które budują realną siłę i kontrolę ciała. Stawia na uważność i precyzję, tak aby efekty było czuć nie tylko na macie, ale też w codziennym funkcjonowaniu.</p>",
+       "user": {
+        "fullName": "Ania Walkiewicz",
+        "guid": "148CD491-0A67-439A-A2B4-DEC7D3E7285A"
+       },
+       "picture": {
+        "path": "/106BBD58-B47A-488A-B749-BAFB92D3D1AF/36f7637a8b243f94285d679aaef161ad515262e2.original.jpeg",
+        "absoluteUrl": "https://fitssey-prod-cdn.storage.googleapis.com/uploads/106BBD58-B47A-488A-B749-BAFB92D3D1AF/36f7637a8b243f94285d679aaef161ad515262e2.medium.jpeg",
+        "guid": "6943E4A9-B73A-471D-B475-7D2462E8FBAF"
+       },
+       "qualifiedName": "Ania Walkiewicz"
+      }
+     ]
+    },
+    {
+     "referenceId": "d43b314c1173b57c3ab71ff4598ab4a45960b6f616cda4c970eea64ecfd93167",
+     "totalCapacity": 9,
+     "onlineCapacity": 9,
+     "waitingListCapacity": 3,
+     "nonVaccinatedCapacity": null,
+     "color": "rgb(62, 101, 255)",
+     "liveStreamUrl": null,
+     "liveStreamPassword": null,
+     "liveStreamPasswordRevealed": null,
+     "privateNotes": null,
+     "isFree": false,
+     "isLiveStream": false,
+     "isCancelled": false,
+     "isHidden": false,
+     "isBookableOnline": true,
+     "startsAt": "2026-11-10T09:00:00+01:00",
+     "endsAt": "2026-11-10T09:55:00+01:00",
+     "member": {
+      "nickname": null,
+      "publicBiography": "<p><strong>Ania</strong> prowadzi zajęcia pilatesu z myślą o tym, żeby realnie wspierać codzienną sprawność i komfort ciała swoich uczestników.</p><p>Wywodzi się z branży spa &amp; wellness, dlatego od początku bliski jest jej temat dobrostanu i świadomej pracy z ciałem. Swoją pilatesową drogę rozpoczęła od Clinical Pilates, a następnie rozwijała się w obszarze biomechaniki ruchu oraz pracy z kobietami w ciąży i po ciąży.</p><p>Na zajęciach szczególną uwagę zwraca na pracę różnych części ciała – ich równowagę, stabilizację i współpracę. Uwielbia też dodawać elementy siłowe i pozycje, które wymagają więcej zaangażowania – takie „smaczki”, które budują realną siłę i kontrolę ciała. Stawia na uważność i precyzję, tak aby efekty było czuć nie tylko na macie, ale też w codziennym funkcjonowaniu.</p>",
+      "user": {
+       "fullName": "Ania Walkiewicz",
+       "guid": "148CD491-0A67-439A-A2B4-DEC7D3E7285A"
+      },
+      "picture": {
+       "path": "/106BBD58-B47A-488A-B749-BAFB92D3D1AF/36f7637a8b243f94285d679aaef161ad515262e2.original.jpeg",
+       "absoluteUrl": "https://fitssey-prod-cdn.storage.googleapis.com/uploads/106BBD58-B47A-488A-B749-BAFB92D3D1AF/36f7637a8b243f94285d679aaef161ad515262e2.medium.jpeg",
+       "guid": "6943E4A9-B73A-471D-B475-7D2462E8FBAF"
+      },
+      "qualifiedName": "Ania Walkiewicz"
+     },
+     "room": {
+      "name": "Domyślna",
+      "isDefault": true,
+      "location": {
+       "name": "Czułosfera"
+      },
+      "qualifiedName": "Czułosfera",
+      "hasSmartLock": false,
+      "guid": "ED81257D-C4EB-4EC9-9E3F-478E53BA8565"
+     },
+     "scheduleMeta": {
+      "bookingBehavior": 0,
+      "isBookableOnline": true,
+      "classService": {
+       "name": "Pilates",
+       "description": null,
+       "picture": {
+        "path": "/106BBD58-B47A-488A-B749-BAFB92D3D1AF/9da20ddc4d1ee8817e071dcc599d837304938963.original.jpeg",
+        "absoluteUrl": "https://fitssey-prod-cdn.storage.googleapis.com/uploads/106BBD58-B47A-488A-B749-BAFB92D3D1AF/9da20ddc4d1ee8817e071dcc599d837304938963.medium.jpeg",
+        "guid": "B7E61FA3-C985-4A58-ADCA-C668278B67E7"
+       },
+       "experienceLevel": {
+        "name": {
+         "en_EN": {
+          "value": "All levels"
+         },
+         "pl_PL": {
+          "value": "Wszystkie poziomy"
+         },
+         "xx_XX": {
+          "value": "All levels"
+         },
+         "es_ES": {
+          "value": "All levels"
+         },
+         "uk_UA": {
+          "value": "All levels"
+         }
+        },
+        "numericLevel": 0,
+        "guid": "07235C5C-C809-4CFF-9389-5E85E991D9D6"
+       },
+       "excerpt": "🤸&zwj;♀️ Pilates na macie świadomy ruch &ndash; stabilność &ndash; siła od środka Pilates na macie to spokojna, ale skuteczna forma pracy z ciałem, kt&oacute;ra skupia się na wzmacnianiu mięśni głębokich (core), poprawie postawy i elastyczności. Ćwiczenia wykonujemy w rytmie oddechu, z dużą uważnością i precyzją &ndash; bez przeciążania staw&oacute;w. Zajęcia prowadzone są w kameralnej atmosferze, z dbałością o technikę i indywidualne podejście. &nbsp; 🌟 Co daje regularna praktyka Pilatesu? wzmacnia mięśnie głębokie i poprawia stabilizację, wspiera zdrową postawę i zmniejsza ryzyko b&oacute;lu plec&oacute;w, zwiększa elastyczność i świadomość ciała, redukuje napięcia i poprawia koncentrację, działa kojąco na układ nerwowy i wspiera dobre samopoczucie. &nbsp; 👚 Jak się przygotować? zał&oacute;ż wygodny, dopasowany str&oacute;j sportowy, ćwiczymy na boso lub w skarpetkach antypoślizgowych, nie musisz przynosić niczego &ndash; zapewniamy maty oraz wszystkie niezbędne akcesoria. &nbsp; ℹ️ Informacje organizacyjne: na zajęcia przychodzimy maksymalnie 10 minut przed rozpoczęciem, jeśli jesteś u nas po raz pierwszy, zgłoś się do recepcji &ndash; z przyjemnością oprowadzimy Cię po przestrzeni, szatnia znajduje się na poziomie -1, w poczekalni zdejmujemy buty i odkładamy je do szafek, rzeczy osobiste pozostawiamy na szafkach lub wieszakach &ndash; dbajmy wsp&oacute;lnie o porządek, prosimy o zachowanie ciszy w poczekalni, ponieważ obok mogą trwać inne zajęcia lub sesje relaksacyjne.",
+       "serviceType": "classroom",
+       "guid": "FC9532C5-E668-45EC-B3FD-677E8C81C7A5"
+      },
+      "guid": "3AED69D5-A194-48C7-BAD9-746793A9B0A3"
+     },
+     "startTime": "09:00",
+     "endTime": "09:55",
+     "hasStarted": true,
+     "hasEnded": true,
+     "isInProgress": false,
+     "remainCapacity": 3,
+     "remainOnlineCapacity": 3,
+     "remainFrontOfficeCapacity": 3,
+     "remainWaitingListCapacity": 3,
+     "remainCapacityForMale": 0,
+     "remainCapacityForFemale": 0,
+     "bookedSpots": 6,
+     "bookedSpotsForMale": null,
+     "bookedSpotsForFemale": null,
+     "bookedWaitingListSpots": 0,
+     "bookedOnlineSpots": 6,
+     "maleCapacity": null,
+     "femaleCapacity": null,
+     "day": 2,
+     "isLiveStreamBroadcasting": false,
+     "isLiveStreamPasswordProtected": false,
+     "clientVisit": null,
+     "isAvailableForBookingAhead": true,
+     "isAvailableBeforeStartTime": false,
+     "qualifiedName": "Pilates",
+     "serviceType": "TYPE_CLASSROOM_SERVICE",
+     "members": [
+      {
+       "nickname": null,
+       "publicBiography": "<p><strong>Ania</strong> prowadzi zajęcia pilatesu z myślą o tym, żeby realnie wspierać codzienną sprawność i komfort ciała swoich uczestników.</p><p>Wywodzi się z branży spa &amp; wellness, dlatego od początku bliski jest jej temat dobrostanu i świadomej pracy z ciałem. Swoją pilatesową drogę rozpoczęła od Clinical Pilates, a następnie rozwijała się w obszarze biomechaniki ruchu oraz pracy z kobietami w ciąży i po ciąży.</p><p>Na zajęciach szczególną uwagę zwraca na pracę różnych części ciała – ich równowagę, stabilizację i współpracę. Uwielbia też dodawać elementy siłowe i pozycje, które wymagają więcej zaangażowania – takie „smaczki”, które budują realną siłę i kontrolę ciała. Stawia na uważność i precyzję, tak aby efekty było czuć nie tylko na macie, ale też w codziennym funkcjonowaniu.</p>",
+       "user": {
+        "fullName": "Ania Walkiewicz",
+        "guid": "148CD491-0A67-439A-A2B4-DEC7D3E7285A"
+       },
+       "picture": {
+        "path": "/106BBD58-B47A-488A-B749-BAFB92D3D1AF/36f7637a8b243f94285d679aaef161ad515262e2.original.jpeg",
+        "absoluteUrl": "https://fitssey-prod-cdn.storage.googleapis.com/uploads/106BBD58-B47A-488A-B749-BAFB92D3D1AF/36f7637a8b243f94285d679aaef161ad515262e2.medium.jpeg",
+        "guid": "6943E4A9-B73A-471D-B475-7D2462E8FBAF"
+       },
+       "qualifiedName": "Ania Walkiewicz"
+      }
+     ]
+    },
+    {
+     "referenceId": "5a57715ccd634c1a3edba030369c842d7c38f9ffba8d172423b2947f63a81abc",
+     "totalCapacity": 3,
+     "onlineCapacity": 3,
+     "waitingListCapacity": 2,
+     "nonVaccinatedCapacity": null,
+     "color": "rgb(17, 123, 15)",
+     "liveStreamUrl": null,
+     "liveStreamPassword": null,
+     "liveStreamPasswordRevealed": null,
+     "privateNotes": null,
+     "isFree": false,
+     "isLiveStream": false,
+     "isCancelled": false,
+     "isHidden": false,
+     "isBookableOnline": true,
+     "startsAt": "2026-11-10T10:00:00+01:00",
+     "endsAt": "2026-11-10T10:55:00+01:00",
+     "member": {
+      "nickname": null,
+      "publicBiography": "<p><strong>Ania</strong> prowadzi zajęcia pilatesu z myślą o tym, żeby realnie wspierać codzienną sprawność i komfort ciała swoich uczestników.</p><p>Wywodzi się z branży spa &amp; wellness, dlatego od początku bliski jest jej temat dobrostanu i świadomej pracy z ciałem. Swoją pilatesową drogę rozpoczęła od Clinical Pilates, a następnie rozwijała się w obszarze biomechaniki ruchu oraz pracy z kobietami w ciąży i po ciąży.</p><p>Na zajęciach szczególną uwagę zwraca na pracę różnych części ciała – ich równowagę, stabilizację i współpracę. Uwielbia też dodawać elementy siłowe i pozycje, które wymagają więcej zaangażowania – takie „smaczki”, które budują realną siłę i kontrolę ciała. Stawia na uważność i precyzję, tak aby efekty było czuć nie tylko na macie, ale też w codziennym funkcjonowaniu.</p>",
+      "user": {
+       "fullName": "Ania Walkiewicz",
+       "guid": "148CD491-0A67-439A-A2B4-DEC7D3E7285A"
+      },
+      "picture": {
+       "path": "/106BBD58-B47A-488A-B749-BAFB92D3D1AF/36f7637a8b243f94285d679aaef161ad515262e2.original.jpeg",
+       "absoluteUrl": "https://fitssey-prod-cdn.storage.googleapis.com/uploads/106BBD58-B47A-488A-B749-BAFB92D3D1AF/36f7637a8b243f94285d679aaef161ad515262e2.medium.jpeg",
+       "guid": "6943E4A9-B73A-471D-B475-7D2462E8FBAF"
+      },
+      "qualifiedName": "Ania Walkiewicz"
+     },
+     "room": {
+      "name": "Domyślna",
+      "isDefault": true,
+      "location": {
+       "name": "Czułosfera"
+      },
+      "qualifiedName": "Czułosfera",
+      "hasSmartLock": false,
+      "guid": "ED81257D-C4EB-4EC9-9E3F-478E53BA8565"
+     },
+     "scheduleMeta": {
+      "bookingBehavior": 0,
+      "isBookableOnline": true,
+      "classService": {
+       "name": "Reformer/Wieża TRIO Poziom 2 🔥",
+       "description": null,
+       "picture": {
+        "path": "/106BBD58-B47A-488A-B749-BAFB92D3D1AF/d974bd71e75738fd1a86181beb42106cca863a80.original.jpeg",
+        "absoluteUrl": "https://fitssey-prod-cdn.storage.googleapis.com/uploads/106BBD58-B47A-488A-B749-BAFB92D3D1AF/d974bd71e75738fd1a86181beb42106cca863a80.medium.jpeg",
+        "guid": "ACBEFC6A-78D0-490F-A7DF-DDC61655F7C4"
+       },
+       "experienceLevel": {
+        "name": {
+         "en_EN": {
+          "value": "Intermediate"
+         },
+         "pl_PL": {
+          "value": "Średni"
+         },
+         "xx_XX": {
+          "value": "Intermediate"
+         },
+         "es_ES": {
+          "value": "Intermediate"
+         },
+         "uk_UA": {
+          "value": "Intermediate"
+         }
+        },
+        "numericLevel": 3,
+        "guid": "112CA9EE-91D0-4687-AF22-281F11118F99"
+       },
+       "excerpt": "🔥 Poziom 2 &ndash; Moc i Dynamika siła &ndash; energia &ndash; kontrola 👉 wzmacniasz ciało i pracujesz z większą intensywnością 👉 łączysz precyzję z dynamiką ruchu 👉 czujesz moc, lekkość i większą pewność w ciele To zajęcia dla os&oacute;b, kt&oacute;re mają już doświadczenie z reformerem (min 10 zajęć) i chcą wejść na bardziej wymagający poziom pracy z ciałem. Skupiamy się na budowaniu siły, wytrzymałości i koordynacji, przy jednoczesnym zachowaniu kontroli i jakości ruchu. Zajęcia mają bardziej dynamiczny charakter &ndash; wykorzystujemy jump board, hantle, boxy i inne akcesoria, kt&oacute;re pozwalają wprowadzić ciało w nowe wyzwania i zwiększyć intensywność treningu. To połączenie świadomego ruchu i energii, kt&oacute;re daje dużą satysfakcję i widoczne efekty. Zajęcia odbywają się w kameralnych, maksymalnie 3-osobowych grupach, co gwarantuje indywidualne podejście i precyzyjne korekty. Instruktorka na bieżąco koryguje ustawienia, udziela wskaz&oacute;wek i dba o prawidłowe wykonanie ruchu, dopasowując intensywność do możliwości uczestnik&oacute;w. Podczas zajęć instruktorka decyduje, czy pracujemy na reformerach, czy na wieży, w zależności od celu sesji i potrzeb ciała. To połączenie zapewnia r&oacute;wnowagę między siłą, stabilizacją i rozciągnięciem, wspierając harmonijny rozw&oacute;j całego ciała. &nbsp; 🌟 Co dają zajęcia na poziomie 2? ✅ rozwijają siłę i wytrzymałość mięśni, ✅ poprawiają kondycję i koordynację, ✅ uczą pracy z oporem i dynamiką, ✅ wzmacniają stabilizację i kontrolę ruchu, ✅ dodają energii i poczucia mocy w ciele. &nbsp; 🧘&zwj;♀️ Dla kogo? dla os&oacute;b po poziomie Intro lub Poziomie 1, dla os&oacute;b, kt&oacute;re czują się pewnie w podstawach i chcą więcej wyzwania, rekomendujemy przejście na ten poziom po około 12 zajęciach, gdy ciało rozumie pracę na reformerze i potrafisz utrzymać kontrolę w ruchu. &nbsp; 👚 Jak się przygotować? zał&oacute;ż wygodny, dopasowany str&oacute;j sportowy, zabierz czyste skarpetki (najlepiej antypoślizgowe), zdejmij biżuterię &ndash; dla bezpieczeństwa i ochrony sprzętu, warto mieć przy sobie wodę. &nbsp; ⏱️ Czas trwania: około 55 minut &ndash; intensywny, świadomy trening siły i dynamiki. &nbsp; ℹ️ Informacje organizacyjne: na zajęcia przychodzimy do 10 minut przed rozpoczęciem, jeśli jesteś u nas po raz pierwszy, zgłoś się do recepcji &ndash; z przyjemnością oprowadzimy Cię po przestrzeni, szatnia znajduje się na poziomie &ndash;1, w poczekalni zdejmujemy buty i odkładamy je do szafek, rzeczy osobiste zostawiamy w szafkach lub na wieszakach, prosimy o ciszę w poczekalni &ndash; obok mogą odbywać się zajęcia relaksacyjne, jeśli zajęcia odbywają się przed 9:00 lub po 19:00 (poza godzinami otwarcia kawiarni) &ndash; wchodzimy i wychodzimy tylnym wejściem (z lewej strony budynku). &nbsp; 🧡 Dziękujemy za uważność i do zobaczenia na reformerze!",
+       "serviceType": "classroom",
+       "guid": "D41174CE-8652-48D9-9A8D-5AAA8025212E"
+      },
+      "guid": "FE080A1E-DFF3-4754-A123-F975CB50758F"
+     },
+     "startTime": "10:00",
+     "endTime": "10:55",
+     "hasStarted": true,
+     "hasEnded": true,
+     "isInProgress": false,
+     "remainCapacity": 1,
+     "remainOnlineCapacity": 2,
+     "remainFrontOfficeCapacity": 1,
+     "remainWaitingListCapacity": 2,
+     "remainCapacityForMale": 0,
+     "remainCapacityForFemale": 0,
+     "bookedSpots": 2,
+     "bookedSpotsForMale": null,
+     "bookedSpotsForFemale": null,
+     "bookedWaitingListSpots": 0,
+     "bookedOnlineSpots": 1,
+     "maleCapacity": null,
+     "femaleCapacity": null,
+     "day": 2,
+     "isLiveStreamBroadcasting": false,
+     "isLiveStreamPasswordProtected": false,
+     "clientVisit": null,
+     "isAvailableForBookingAhead": true,
+     "isAvailableBeforeStartTime": false,
+     "qualifiedName": "Reformer/Wieża TRIO Poziom 2 🔥",
+     "serviceType": "TYPE_CLASSROOM_SERVICE",
+     "members": [
+      {
+       "nickname": null,
+       "publicBiography": "<p><strong>Ania</strong> prowadzi zajęcia pilatesu z myślą o tym, żeby realnie wspierać codzienną sprawność i komfort ciała swoich uczestników.</p><p>Wywodzi się z branży spa &amp; wellness, dlatego od początku bliski jest jej temat dobrostanu i świadomej pracy z ciałem. Swoją pilatesową drogę rozpoczęła od Clinical Pilates, a następnie rozwijała się w obszarze biomechaniki ruchu oraz pracy z kobietami w ciąży i po ciąży.</p><p>Na zajęciach szczególną uwagę zwraca na pracę różnych części ciała – ich równowagę, stabilizację i współpracę. Uwielbia też dodawać elementy siłowe i pozycje, które wymagają więcej zaangażowania – takie „smaczki”, które budują realną siłę i kontrolę ciała. Stawia na uważność i precyzję, tak aby efekty było czuć nie tylko na macie, ale też w codziennym funkcjonowaniu.</p>",
+       "user": {
+        "fullName": "Ania Walkiewicz",
+        "guid": "148CD491-0A67-439A-A2B4-DEC7D3E7285A"
+       },
+       "picture": {
+        "path": "/106BBD58-B47A-488A-B749-BAFB92D3D1AF/36f7637a8b243f94285d679aaef161ad515262e2.original.jpeg",
+        "absoluteUrl": "https://fitssey-prod-cdn.storage.googleapis.com/uploads/106BBD58-B47A-488A-B749-BAFB92D3D1AF/36f7637a8b243f94285d679aaef161ad515262e2.medium.jpeg",
+        "guid": "6943E4A9-B73A-471D-B475-7D2462E8FBAF"
+       },
+       "qualifiedName": "Ania Walkiewicz"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

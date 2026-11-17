@@ -11,26 +11,26 @@ YAML entry example:
     parser: "delta_sections"
     schedule_type: "static"
 """
+
 from __future__ import annotations
 
 import re
-from typing import Any, Optional
+from typing import Any
 from urllib.parse import urlparse
 
 import pandas as pd
 import requests
 
-from models import ClassEvent, events_to_frame
-from registry import register
+from gen_ai_de.ingestion.schedule.models import ClassEvent, events_to_frame
+from gen_ai_de.ingestion.schedule.registry import register
 
-WEEKDAYS = {"poniedziałek": 0, "wtorek": 1, "środa": 2, "czwartek": 3,
-            "piątek": 4, "sobota": 5, "niedziela": 6}
+WEEKDAYS = {"poniedziałek": 0, "wtorek": 1, "środa": 2, "czwartek": 3, "piątek": 4, "sobota": 5, "niedziela": 6}
 REQUEST_TIMEOUT_S = 20
 HEADERS = {"User-Agent": "Mozilla/5.0 (schedule-scraper; personal project)"}
 SCHEDULE_RE = re.compile(r"(?P<day>\S+)\s*·\s*(?P<h1>\d{1,2}):(?P<m1>\d{2})\s*[–-]\s*(?P<h2>\d{1,2}):(?P<m2>\d{2})")
 
 
-def parse_schedule(text: str) -> Optional[dict[str, Any]]:
+def parse_schedule(text: str) -> dict[str, Any] | None:
     """'Poniedziałek · 17:00–18:00' -> weekday, start_time, duration_min."""
     match = SCHEDULE_RE.search(text or "")
     if not match or match["day"].lower() not in WEEKDAYS:
@@ -44,24 +44,26 @@ def parse_schedule(text: str) -> Optional[dict[str, Any]]:
     }
 
 
-def parse_payload(payload: dict[str, Any], link: Optional[str] = None) -> list[ClassEvent]:
+def parse_payload(payload: dict[str, Any], link: str | None = None) -> list[ClassEvent]:
     events: list[ClassEvent] = []
     for section in payload.get("sections", []):
         for session in section.get("sessions") or [section]:
             when = parse_schedule(session.get("schedule") or section.get("schedule"))
             if when is None:
                 continue
-            events.append(ClassEvent(
-                source="",  # filled in by run.py from the YAML name
-                title=(section.get("name") or "").strip(),
-                instructors=[section["coach"]] if section.get("coach") else [],
-                spots_total=session.get("capacity"),
-                spots_free=session.get("available"),
-                level=section.get("kind"),
-                url=link,
-                raw=section,
-                **when,
-            ))
+            events.append(
+                ClassEvent(
+                    source="",  # filled in by run.py from the YAML name
+                    title=(section.get("name") or "").strip(),
+                    instructors=[section["coach"]] if section.get("coach") else [],
+                    spots_total=session.get("capacity"),
+                    spots_free=session.get("available"),
+                    level=section.get("kind"),
+                    url=link,
+                    raw=section,
+                    **when,
+                )
+            )
     return events
 
 

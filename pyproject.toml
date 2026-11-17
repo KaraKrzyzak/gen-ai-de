@@ -7,19 +7,27 @@ authors = [
     { name = "Karolina Krzyzagórska", email = "krzyzakkara@gmail.com" }
 ]
 requires-python = ">=3.9"
+# Core: what the daily ingestion needs (keeps the Docker image small).
 dependencies = [
     "pandas>=2.3.3",
     "pydantic>=2.13.5",
-    "transformers>=4.28.0",
-    "torch>=2.0.0",
-    "sentence-transformers>=2.2.2",
     "beautifulsoup4>=4.15.0",
     "requests>=2.32.5",
     "pyyaml>=6.0.3",
-    "dataclasses>=0.8",
     "python-dateutil>=3.0.0",
-    "playwright>=1.60.0",
     "kagglehub>=0.3.13",
+    "python-dotenv>=1.2.1",
+]
+
+# Heavy, optional. Install what you need:  uv sync --extra nlp --extra browser  (or --all-extras)
+[project.optional-dependencies]
+nlp = [                       # embeddings / similarity (pulls torch, ~GBs of CUDA wheels on x86 Linux)
+    "transformers>=4.28.0",
+    "torch>=2.0.0",
+    "sentence-transformers>=2.2.2",
+]
+browser = [                   # discover.py: records the JSON a page loads
+    "playwright>=1.60.0",
 ]
 
 [dependency-groups] ## narzedzia lokalne dla mnie
@@ -35,3 +43,10 @@ gen-ai-de = "gen_ai_de:main"
 [build-system]
 requires = ["uv_build>=0.13.7,<0.14.0"]
 build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]   # auto/ has its own tests and dependencies
+
+[tool.ruff]
+line-length = 120
+extend-exclude = ["auto"]
